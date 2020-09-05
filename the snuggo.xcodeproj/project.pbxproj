@@ -15,6 +15,9 @@
 		B597DA86250342A3004F03AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B597DA84250342A3004F03AE /* LaunchScreen.storyboard */; };
 		B597DA91250342A3004F03AE /* the_snuggoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA90250342A3004F03AE /* the_snuggoTests.swift */; };
 		B597DA9C250342A3004F03AE /* the_snuggoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA9B250342A3004F03AE /* the_snuggoUITests.swift */; };
+		B597DAAB25036044004F03AE /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DAAA25036044004F03AE /* LoginUIView.swift */; };
+		B597DAAD25036512004F03AE /* LoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DAAC25036512004F03AE /* LoginButtons.swift */; };
+		B597DAAF25037651004F03AE /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DAAE25037651004F03AE /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B597DA97250342A3004F03AE /* the snuggoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the snuggoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B597DA9B250342A3004F03AE /* the_snuggoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_snuggoUITests.swift; sourceTree = "<group>"; };
 		B597DA9D250342A3004F03AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B597DAAA25036044004F03AE /* LoginUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIView.swift; sourceTree = "<group>"; };
+		B597DAAC25036512004F03AE /* LoginButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtons.swift; sourceTree = "<group>"; };
+		B597DAAE25037651004F03AE /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		B597DA782503429D004F03AE /* the snuggo */ = {
 			isa = PBXGroup;
 			children = (
+				B597DAA925035FD1004F03AE /* Custom Views */,
 				B597DA792503429D004F03AE /* AppDelegate.swift */,
 				B597DA7B2503429D004F03AE /* SceneDelegate.swift */,
 				B597DA7D2503429D004F03AE /* ViewController.swift */,
@@ -126,6 +133,16 @@
 				B597DA9D250342A3004F03AE /* Info.plist */,
 			);
 			path = "the snuggoUITests";
+			sourceTree = "<group>";
+		};
+		B597DAA925035FD1004F03AE /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				B597DAAA25036044004F03AE /* LoginUIView.swift */,
+				B597DAAC25036512004F03AE /* LoginButtons.swift */,
+				B597DAAE25037651004F03AE /* LoginTextField.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B597DAAD25036512004F03AE /* LoginButtons.swift in Sources */,
 				B597DA7E2503429D004F03AE /* ViewController.swift in Sources */,
 				B597DA7A2503429D004F03AE /* AppDelegate.swift in Sources */,
+				B597DAAF25037651004F03AE /* LoginTextField.swift in Sources */,
+				B597DAAB25036044004F03AE /* LoginUIView.swift in Sources */,
 				B597DA7C2503429D004F03AE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

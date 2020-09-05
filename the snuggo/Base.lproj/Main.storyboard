@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="Vyc-Ly-0Ge">
             <objects>
-                <viewController id="bFh-6d-6mT" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="bFh-6d-6mT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J0e-I2-TdD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,16 +52,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJ7-vM-vWQ">
                                 <rect key="frame" x="0.0" y="672" width="414" height="186"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChO-xb-zGR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChO-xb-zGR" customClass="MainButton" customModule="the_snuggo" customModuleProvider="target">
                                         <rect key="frame" x="8" y="53" width="398" height="56"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="u8H-JM-Tnm"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="Bln-KH-RDy"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
                                         <state key="normal" title="Get Started">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="DNv-by-kVl" kind="show" id="KJc-R8-k1s"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84E-C8-Mpp">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -123,6 +127,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6jj-Pu-eyz"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gER-Zv-DL2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Aw-6Z-Ibj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +136,7 @@
         <!--View Controller-->
         <scene sceneID="S0G-tq-g7Z">
             <objects>
-                <viewController id="DNv-by-kVl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" modalPresentationStyle="fullScreen" id="DNv-by-kVl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0dm-Q5-bnZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,19 +149,23 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="aIR-QW-cTE"/>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ViD-KV-hoG">
-                                <rect key="frame" x="0.0" y="672" width="414" height="186"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ViD-KV-hoG">
+                                <rect key="frame" x="0.0" y="690" width="414" height="186"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnP-tH-mNT">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnP-tH-mNT" customClass="MainButton" customModule="the_snuggo" customModuleProvider="target">
                                         <rect key="frame" x="8" y="53" width="398" height="56"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="JWm-l2-jh9"/>
                                         </constraints>
                                         <viewLayoutGuide key="safeArea" id="Xu4-mr-jnc"/>
-                                        <state key="normal" title="Get Started">
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Back">
                                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="bFh-6d-6mT" kind="custom" customClass="DismissSegue" customModule="the_snuggo" customModuleProvider="target" id="Y5O-G2-SYv"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSh-N4-DPf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -175,7 +184,7 @@
                                         <viewLayoutGuide key="safeArea" id="yvv-VJ-cIz"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ChillBaby® Technologies LLC Product © 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzh-OA-e1C">
-                                        <rect key="frame" x="66" y="148" width="282" height="12"/>
+                                        <rect key="frame" x="66.5" y="148" width="281.5" height="12"/>
                                         <viewLayoutGuide key="safeArea" id="5Y3-4A-pSF"/>
                                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -199,23 +208,1229 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="rFO-ro-sYp"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCc-7Q-vsm" userLabel="main popup" customClass="LoginUIView" customModule="the_snuggo" customModuleProvider="target">
+                                <rect key="frame" x="17" y="260" width="380" height="342"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpI-73-MEd" userLabel="left bar">
+                                        <rect key="frame" x="12" y="114" width="118" height="1"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.28235294117647058" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Dxs-Lz-zF0"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="2oi-rr-l5F"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2v-mQ-ysM">
+                                        <rect key="frame" x="142" y="100" width="96.5" height="14"/>
+                                        <color key="tintColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14" id="pmZ-iQ-1wu"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="H63-Gg-gVN"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aK-wY-2ys" userLabel="right bar">
+                                        <rect key="frame" x="250.5" y="114" width="117.5" height="1"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.28235294119999998" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="24n-PV-Yo4"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="7or-e6-v9E"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="9ys-Zf-Mkw" userLabel="Controls">
+                                        <rect key="frame" x="12" y="132" width="356" height="210"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nb2-x2-LlI" userLabel="Email" customClass="LoginTextField" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="36"/>
+                                                <color key="backgroundColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="0hC-Ap-nTV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-m1-BJ3" userLabel="Password" customClass="LoginTextField" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="48" width="356" height="36"/>
+                                                <color key="backgroundColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="q5x-v1-rnz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgQ-Uf-PAK" userLabel="Red Button" customClass="LoginButton" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="244" y="96" width="112" height="39"/>
+                                                <color key="backgroundColor" red="0.96078431372549022" green="0.17254901960784313" blue="0.25490196078431371" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="4uN-7u-3ue"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="RzQ-Xx-bDN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Get Started">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="EVf-kG-Si3" userLabel="register">
+                                                <rect key="frame" x="186" y="147" width="170" height="63"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiY-qV-DlO">
+                                                        <rect key="frame" x="0.0" y="33" width="50" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Zvx-dd-vge"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                        <state key="normal" title="Register">
+                                                            <color key="titleColor" red="0.19607843137254902" green="0.50588235294117645" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="Wsf-d6-Dfb" kind="show" id="pM2-TU-CAY"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juf-Xs-suy">
+                                                        <rect key="frame" x="62" y="33" width="108" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="CSf-9b-r6X"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                        <state key="normal" title="Forgot password?">
+                                                            <color key="titleColor" red="0.19607843137254902" green="0.50588235294117645" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="3yM-yl-D62" kind="show" id="6ag-Be-ali"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nb2-x2-LlI" firstAttribute="trailing" secondItem="wfm-yB-F8e" secondAttribute="trailing" id="L69-QD-dTN"/>
+                                            <constraint firstItem="jhI-m1-BJ3" firstAttribute="trailing" secondItem="wfm-yB-F8e" secondAttribute="trailing" id="fkq-Mw-1CE"/>
+                                            <constraint firstAttribute="height" constant="210" id="rQZ-cU-BAV"/>
+                                            <constraint firstItem="nb2-x2-LlI" firstAttribute="leading" secondItem="wfm-yB-F8e" secondAttribute="leading" id="riZ-rO-Z4r"/>
+                                            <constraint firstItem="jhI-m1-BJ3" firstAttribute="leading" secondItem="wfm-yB-F8e" secondAttribute="leading" id="y3E-sh-q8j"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="wfm-yB-F8e"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="c2v-mQ-ysM" firstAttribute="top" secondItem="fCc-7Q-vsm" secondAttribute="top" constant="100" id="2lK-68-Bif"/>
+                                    <constraint firstItem="9ys-Zf-Mkw" firstAttribute="leading" secondItem="fCc-7Q-vsm" secondAttribute="leading" constant="12" id="65n-Np-o5J"/>
+                                    <constraint firstItem="xpI-73-MEd" firstAttribute="top" secondItem="c2v-mQ-ysM" secondAttribute="bottom" id="9iZ-OB-YLm"/>
+                                    <constraint firstItem="xpI-73-MEd" firstAttribute="trailing" secondItem="c2v-mQ-ysM" secondAttribute="leading" constant="-12" id="KOI-ko-8v7"/>
+                                    <constraint firstItem="9ys-Zf-Mkw" firstAttribute="bottom" secondItem="fCc-7Q-vsm" secondAttribute="bottom" id="VX5-JN-I0J"/>
+                                    <constraint firstItem="0aK-wY-2ys" firstAttribute="trailing" secondItem="fCc-7Q-vsm" secondAttribute="trailing" constant="-12" id="du1-Pq-lhi"/>
+                                    <constraint firstAttribute="height" constant="342" id="eHB-dx-pC9"/>
+                                    <constraint firstItem="c2v-mQ-ysM" firstAttribute="centerX" secondItem="9ys-Zf-Mkw" secondAttribute="centerX" id="eQY-co-8Ju"/>
+                                    <constraint firstItem="xpI-73-MEd" firstAttribute="leading" secondItem="fCc-7Q-vsm" secondAttribute="leading" constant="12" id="ebl-Vu-7vN"/>
+                                    <constraint firstItem="0aK-wY-2ys" firstAttribute="leading" secondItem="c2v-mQ-ysM" secondAttribute="trailing" constant="12" id="gxi-q2-1Pf"/>
+                                    <constraint firstItem="0aK-wY-2ys" firstAttribute="top" secondItem="c2v-mQ-ysM" secondAttribute="bottom" id="mmU-w2-YGN"/>
+                                    <constraint firstAttribute="trailing" secondItem="9ys-Zf-Mkw" secondAttribute="trailing" constant="12" id="wRw-0d-BZX"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="tFi-3N-LKb" firstAttribute="bottom" secondItem="ViD-KV-hoG" secondAttribute="bottom" constant="-14" id="7uC-yI-MRn"/>
+                            <constraint firstItem="fCc-7Q-vsm" firstAttribute="top" secondItem="nRj-e8-UA7" secondAttribute="bottom" constant="84" id="A2r-67-8tY"/>
                             <constraint firstItem="ViD-KV-hoG" firstAttribute="leading" secondItem="tFi-3N-LKb" secondAttribute="leading" id="N15-M9-lWU"/>
                             <constraint firstItem="nRj-e8-UA7" firstAttribute="top" secondItem="tFi-3N-LKb" secondAttribute="top" constant="46" id="QDe-Jq-yZ2"/>
+                            <constraint firstItem="tFi-3N-LKb" firstAttribute="trailing" secondItem="fCc-7Q-vsm" secondAttribute="trailing" constant="17" id="YOT-u2-vEQ"/>
+                            <constraint firstItem="fCc-7Q-vsm" firstAttribute="leading" secondItem="tFi-3N-LKb" secondAttribute="leading" constant="17" id="fEb-R7-RTk"/>
                             <constraint firstItem="nRj-e8-UA7" firstAttribute="centerX" secondItem="0dm-Q5-bnZ" secondAttribute="centerX" id="uiK-GU-Lor"/>
                             <constraint firstItem="ViD-KV-hoG" firstAttribute="trailing" secondItem="tFi-3N-LKb" secondAttribute="trailing" id="zMV-C7-ztc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tFi-3N-LKb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0vY-2Y-abB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRn-jj-c6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="375"/>
+            <point key="canvasLocation" x="794" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qcA-ly-Wi4">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Wsf-d6-Dfb" customClass="ViewController" customModule="the_snuggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZWB-ac-MIb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheSnuggoLogowhite" translatesAutoresizingMaskIntoConstraints="NO" id="XdE-QW-iT3">
+                                <rect key="frame" x="120.5" y="90" width="173" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="AjH-pm-o4z"/>
+                                    <constraint firstAttribute="width" constant="173" id="tNl-h5-Onq"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="iCB-W4-PPO"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7K3-rk-x2J">
+                                <rect key="frame" x="0.0" y="690" width="414" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTj-T2-3Oh" customClass="MainButton" customModule="the_snuggo" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="53" width="398" height="56"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="jAR-PP-66K"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="U6V-Ca-4Ym"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DNv-by-kVl" kind="custom" customClass="DismissSegue" customModule="the_snuggo" customModuleProvider="target" id="LJb-PK-rty"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPA-Pz-vpj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Pjn-Q9-evf"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="HXc-Ak-Rcs"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aER-pp-VTG">
+                                        <rect key="frame" x="0.0" y="185" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="YG0-Zd-jjB"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="qPl-nQ-dBt"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ChillBaby® Technologies LLC Product © 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMf-Ud-wLC">
+                                        <rect key="frame" x="66.5" y="148" width="281.5" height="12"/>
+                                        <viewLayoutGuide key="safeArea" id="hUV-Oi-jYV"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63529411759999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="leading" secondItem="bPA-Pz-vpj" secondAttribute="leading" id="3Mf-FI-9Mp"/>
+                                    <constraint firstAttribute="trailing" secondItem="aER-pp-VTG" secondAttribute="trailing" id="9PY-m5-t8m"/>
+                                    <constraint firstItem="tMf-Ud-wLC" firstAttribute="centerX" secondItem="7K3-rk-x2J" secondAttribute="centerX" id="N1f-Xd-6OE"/>
+                                    <constraint firstItem="dTj-T2-3Oh" firstAttribute="centerY" secondItem="7K3-rk-x2J" secondAttribute="centerY" constant="-12" id="X30-gs-pNc"/>
+                                    <constraint firstAttribute="height" constant="186" id="YNx-4W-5K9"/>
+                                    <constraint firstAttribute="leading" secondItem="aER-pp-VTG" secondAttribute="leading" id="aLk-Rl-lTb"/>
+                                    <constraint firstItem="tMf-Ud-wLC" firstAttribute="bottom" secondItem="7K3-rk-x2J" secondAttribute="bottom" constant="-26" id="e3a-5D-duO"/>
+                                    <constraint firstAttribute="bottom" secondItem="aER-pp-VTG" secondAttribute="bottom" id="h4O-1d-omA"/>
+                                    <constraint firstAttribute="top" secondItem="bPA-Pz-vpj" secondAttribute="top" id="iqg-ji-K33"/>
+                                    <constraint firstAttribute="trailing" secondItem="bPA-Pz-vpj" secondAttribute="trailing" id="jFE-1s-XjW"/>
+                                    <constraint firstItem="dTj-T2-3Oh" firstAttribute="leading" secondItem="1yX-64-R3N" secondAttribute="leading" constant="8" id="mVj-g9-hIU"/>
+                                    <constraint firstItem="1yX-64-R3N" firstAttribute="trailing" secondItem="dTj-T2-3Oh" secondAttribute="trailing" constant="8" id="nPG-jI-QFN"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="1yX-64-R3N"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5q-93-wt4" userLabel="main popup" customClass="LoginUIView" customModule="the_snuggo" customModuleProvider="target">
+                                <rect key="frame" x="17" y="260" width="380" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfI-9J-uIB">
+                                        <rect key="frame" x="144.5" y="18" width="91" height="20"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="GfP-ua-6NT"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="CeJ-bb-aB4"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your details to register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xw-oB-eir" userLabel="details">
+                                        <rect key="frame" x="65.5" y="45" width="249" height="17"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="H4W-SW-jTM"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="Hy8-zH-0Qb"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3If-bd-fOI" userLabel="Controls">
+                                        <rect key="frame" x="12" y="81" width="356" height="261"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3Q-LX-OAx" userLabel="name">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="14"/>
+                                                <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="JFL-fC-d5B"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="BMQ-aH-oXq"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Lw-HY-dFo" userLabel="Name" customClass="LoginTextField" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="26" width="356" height="36"/>
+                                                <color key="backgroundColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="qIU-oY-fhF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="name"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYp-H2-nf4" userLabel="email">
+                                                <rect key="frame" x="0.0" y="74" width="356" height="14"/>
+                                                <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="LxM-9W-LCG"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="7BE-NB-owA"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AFf-NN-LjW" userLabel="Email" customClass="LoginTextField" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="100" width="356" height="36"/>
+                                                <color key="backgroundColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="yVe-Fj-b0b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" textContentType="email"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdY-PU-hBi" userLabel="Red Button" customClass="LoginButton" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="244" y="148" width="112" height="39"/>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.17254901959999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="MyF-a8-Js5"/>
+                                                    <constraint firstAttribute="height" constant="39" id="fK2-7P-jYf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="bzw-9M-5fh" kind="show" id="cbJ-I5-ZCS"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GCg-Ib-2Sp" userLabel="login">
+                                                <rect key="frame" x="0.0" y="199" width="356" height="21"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="cgL-nL-G5M"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="Fxn-gy-2bz"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Have an account? ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="LOGIN">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19608" green="0.50588" blue="0.86667000000000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Wsf-d6-Dfb" id="vfy-I9-rS0"/>
+                                                </connections>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z58-44-50w" userLabel="terms">
+                                                <rect key="frame" x="0.0" y="232" width="356" height="29"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="By continuing, you agree to our ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Terms of use">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19608" green="0.50588" blue="0.86667000000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" and ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="privacy policy">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19608" green="0.50588" blue="0.86667000000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Wsf-d6-Dfb" id="KUv-Ui-mh9"/>
+                                                </connections>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mYp-H2-nf4" firstAttribute="leading" secondItem="HhJ-Mm-HpO" secondAttribute="leading" id="9SP-wA-5v7"/>
+                                            <constraint firstItem="5Lw-HY-dFo" firstAttribute="leading" secondItem="HhJ-Mm-HpO" secondAttribute="leading" id="A9k-QN-Z2U"/>
+                                            <constraint firstAttribute="height" constant="261" id="Ff4-zT-eSK"/>
+                                            <constraint firstItem="z58-44-50w" firstAttribute="centerX" secondItem="3If-bd-fOI" secondAttribute="centerX" id="H0r-BO-NKv"/>
+                                            <constraint firstItem="AFf-NN-LjW" firstAttribute="leading" secondItem="HhJ-Mm-HpO" secondAttribute="leading" id="Q9J-J7-sCu"/>
+                                            <constraint firstItem="GCg-Ib-2Sp" firstAttribute="centerX" secondItem="3If-bd-fOI" secondAttribute="centerX" id="WQr-Bz-qxl"/>
+                                            <constraint firstItem="AFf-NN-LjW" firstAttribute="trailing" secondItem="HhJ-Mm-HpO" secondAttribute="trailing" id="YYh-aV-MSn"/>
+                                            <constraint firstItem="v3Q-LX-OAx" firstAttribute="trailing" secondItem="HhJ-Mm-HpO" secondAttribute="trailing" id="cbH-uD-RoF"/>
+                                            <constraint firstItem="mYp-H2-nf4" firstAttribute="trailing" secondItem="HhJ-Mm-HpO" secondAttribute="trailing" id="dv5-Pn-4kS"/>
+                                            <constraint firstItem="5Lw-HY-dFo" firstAttribute="trailing" secondItem="HhJ-Mm-HpO" secondAttribute="trailing" id="l5z-Hv-sf8"/>
+                                            <constraint firstItem="v3Q-LX-OAx" firstAttribute="leading" secondItem="HhJ-Mm-HpO" secondAttribute="leading" id="v0s-Kx-RS0"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="HhJ-Mm-HpO"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="nfI-9J-uIB" firstAttribute="centerX" secondItem="k5q-93-wt4" secondAttribute="centerX" id="05z-zq-QNw"/>
+                                    <constraint firstItem="3If-bd-fOI" firstAttribute="bottom" secondItem="k5q-93-wt4" secondAttribute="bottom" id="08b-y4-KDz"/>
+                                    <constraint firstItem="8xw-oB-eir" firstAttribute="centerX" secondItem="k5q-93-wt4" secondAttribute="centerX" id="2qo-FR-oWd"/>
+                                    <constraint firstItem="nfI-9J-uIB" firstAttribute="top" secondItem="k5q-93-wt4" secondAttribute="top" constant="18" id="3W3-ae-b6X"/>
+                                    <constraint firstAttribute="height" constant="342" id="94V-wj-U2k"/>
+                                    <constraint firstItem="8xw-oB-eir" firstAttribute="top" secondItem="nfI-9J-uIB" secondAttribute="bottom" constant="7" id="fNQ-ee-RLU"/>
+                                    <constraint firstItem="3If-bd-fOI" firstAttribute="trailing" secondItem="k5q-93-wt4" secondAttribute="trailing" constant="-12" id="iv1-0X-R8w"/>
+                                    <constraint firstItem="3If-bd-fOI" firstAttribute="leading" secondItem="k5q-93-wt4" secondAttribute="leading" constant="12" id="tvQ-lB-FFl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jJI-jl-k4i" firstAttribute="bottom" secondItem="7K3-rk-x2J" secondAttribute="bottom" constant="-14" id="0uS-oy-8Mx"/>
+                            <constraint firstItem="7K3-rk-x2J" firstAttribute="leading" secondItem="jJI-jl-k4i" secondAttribute="leading" id="4Ri-lQ-GP8"/>
+                            <constraint firstItem="k5q-93-wt4" firstAttribute="leading" secondItem="jJI-jl-k4i" secondAttribute="leading" constant="17" id="V7H-Vh-7br"/>
+                            <constraint firstItem="XdE-QW-iT3" firstAttribute="top" secondItem="jJI-jl-k4i" secondAttribute="top" constant="46" id="ZaP-XT-KgB"/>
+                            <constraint firstItem="jJI-jl-k4i" firstAttribute="trailing" secondItem="k5q-93-wt4" secondAttribute="trailing" constant="17" id="bWM-Sb-nXn"/>
+                            <constraint firstItem="XdE-QW-iT3" firstAttribute="centerX" secondItem="ZWB-ac-MIb" secondAttribute="centerX" id="bXc-Wm-hls"/>
+                            <constraint firstItem="7K3-rk-x2J" firstAttribute="trailing" secondItem="jJI-jl-k4i" secondAttribute="trailing" id="dR2-YU-FEo"/>
+                            <constraint firstItem="k5q-93-wt4" firstAttribute="top" secondItem="XdE-QW-iT3" secondAttribute="bottom" constant="84" id="fC1-QM-RQX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jJI-jl-k4i"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DI2-0F-2za"/>
+                    <connections>
+                        <outlet property="loginLabel" destination="GCg-Ib-2Sp" id="tUK-fV-gfc"/>
+                        <outlet property="termsLabel" destination="z58-44-50w" id="dyJ-29-p2e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="up9-zT-PfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1537.68115942029" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X9C-Ll-sWT">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="bzw-9M-5fh" customClass="ViewController" customModule="the_snuggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cYo-zm-tjK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheSnuggoLogowhite" translatesAutoresizingMaskIntoConstraints="NO" id="vpK-k9-CrS">
+                                <rect key="frame" x="120.5" y="90" width="173" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="Q6q-4O-OnI"/>
+                                    <constraint firstAttribute="width" constant="173" id="h0l-be-r1R"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="VtN-K3-g6k"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0YZ-bD-cpo">
+                                <rect key="frame" x="0.0" y="690" width="414" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQ6-PP-eEj" customClass="MainButton" customModule="the_snuggo" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="53" width="398" height="56"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="vjh-Mz-h3j"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="Lq2-eA-GFF"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Wsf-d6-Dfb" kind="custom" customClass="DismissSegue" customModule="the_snuggo" customModuleProvider="target" id="KAm-MX-iHO"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Feb-Bc-KwR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="fU4-E9-EKb"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="BN7-FY-3BA"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eH4-sv-478">
+                                        <rect key="frame" x="0.0" y="185" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="i4X-A3-dVy"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="ePE-hX-Dd5"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ChillBaby® Technologies LLC Product © 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4D-XZ-Yxb">
+                                        <rect key="frame" x="66.5" y="148" width="281.5" height="12"/>
+                                        <viewLayoutGuide key="safeArea" id="kzb-DF-Cej"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63529411759999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="top" secondItem="Feb-Bc-KwR" secondAttribute="top" id="1FK-Ow-TCt"/>
+                                    <constraint firstItem="p4l-HS-nwd" firstAttribute="trailing" secondItem="iQ6-PP-eEj" secondAttribute="trailing" constant="8" id="6MI-c7-tEQ"/>
+                                    <constraint firstAttribute="leading" secondItem="eH4-sv-478" secondAttribute="leading" id="D19-IN-gMp"/>
+                                    <constraint firstAttribute="trailing" secondItem="eH4-sv-478" secondAttribute="trailing" id="DI6-cb-oAZ"/>
+                                    <constraint firstAttribute="leading" secondItem="Feb-Bc-KwR" secondAttribute="leading" id="QEs-wY-554"/>
+                                    <constraint firstItem="q4D-XZ-Yxb" firstAttribute="centerX" secondItem="0YZ-bD-cpo" secondAttribute="centerX" id="TdN-2O-iw6"/>
+                                    <constraint firstAttribute="height" constant="186" id="Tv0-UR-6V6"/>
+                                    <constraint firstAttribute="bottom" secondItem="eH4-sv-478" secondAttribute="bottom" id="d4J-6S-zNJ"/>
+                                    <constraint firstItem="iQ6-PP-eEj" firstAttribute="centerY" secondItem="0YZ-bD-cpo" secondAttribute="centerY" constant="-12" id="h2i-dR-9yF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Feb-Bc-KwR" secondAttribute="trailing" id="qAy-nq-Tcd"/>
+                                    <constraint firstItem="q4D-XZ-Yxb" firstAttribute="bottom" secondItem="0YZ-bD-cpo" secondAttribute="bottom" constant="-26" id="qIT-8d-HB1"/>
+                                    <constraint firstItem="iQ6-PP-eEj" firstAttribute="leading" secondItem="p4l-HS-nwd" secondAttribute="leading" constant="8" id="xmd-Ft-Kba"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="p4l-HS-nwd"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UI-3S-Vdu" userLabel="main popup" customClass="LoginUIView" customModule="the_snuggo" customModuleProvider="target">
+                                <rect key="frame" x="17" y="260" width="380" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbV-Ng-vaD">
+                                        <rect key="frame" x="144.5" y="18" width="91" height="20"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="XzE-xP-QRa"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="Ho4-eL-tkf"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your details to register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwC-IY-bi1" userLabel="details">
+                                        <rect key="frame" x="65.5" y="45" width="249" height="17"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="6Gp-5y-cSn"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="45M-Zb-4F9"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HCQ-nY-E7P" userLabel="Controls">
+                                        <rect key="frame" x="12" y="81" width="356" height="261"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eB2-9B-k9f" userLabel="name">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="14"/>
+                                                <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="ZK3-OO-Lqe"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="v8y-Lv-43Y"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oy2-dR-IS2" userLabel="Name" customClass="LoginTextField" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="26" width="356" height="36"/>
+                                                <color key="backgroundColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="Dxq-6q-Oh0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="password"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1U-sU-j35" userLabel="email">
+                                                <rect key="frame" x="0.0" y="74" width="356" height="14"/>
+                                                <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="14" id="Fik-WR-DgT"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="KYv-Sg-C5a"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1N-ou-0ef" userLabel="Email" customClass="LoginTextField" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="100" width="356" height="36"/>
+                                                <color key="backgroundColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="IN1-DN-vPC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="go" textContentType="email"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rd1-aj-AMA" userLabel="Red Button" customClass="LoginButton" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="244" y="148" width="112" height="39"/>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.17254901959999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="a1V-zm-Frh"/>
+                                                    <constraint firstAttribute="height" constant="39" id="rYX-tp-fyu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Next">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="nib-cf-ElE" kind="show" id="qrt-e8-I3w"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKd-or-pWi" userLabel="login">
+                                                <rect key="frame" x="0.0" y="199" width="356" height="21"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Wx3-nu-LjD"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="VyE-T7-Cwc"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Have an account? ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="LOGIN">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19608" green="0.50588" blue="0.86667000000000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="bzw-9M-5fh" id="ukT-dk-BWi"/>
+                                                </connections>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPZ-Fy-mSY" userLabel="terms">
+                                                <rect key="frame" x="0.0" y="232" width="356" height="29"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="By continuing, you agree to our ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Terms of use">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19608" green="0.50588" blue="0.86667000000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" and ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="privacy policy">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19608" green="0.50588" blue="0.86667000000000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=".">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="8" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="bzw-9M-5fh" id="GrM-lw-t3m"/>
+                                                </connections>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Y1N-ou-0ef" firstAttribute="leading" secondItem="Mfq-BR-bwI" secondAttribute="leading" id="1zF-C1-Vhl"/>
+                                            <constraint firstItem="Y1U-sU-j35" firstAttribute="trailing" secondItem="Mfq-BR-bwI" secondAttribute="trailing" id="6nD-qb-SUi"/>
+                                            <constraint firstItem="Y1N-ou-0ef" firstAttribute="trailing" secondItem="Mfq-BR-bwI" secondAttribute="trailing" id="8gg-f9-7mU"/>
+                                            <constraint firstItem="Oy2-dR-IS2" firstAttribute="trailing" secondItem="Mfq-BR-bwI" secondAttribute="trailing" id="AO2-FO-6fS"/>
+                                            <constraint firstAttribute="height" constant="261" id="G8g-7U-Spb"/>
+                                            <constraint firstItem="eB2-9B-k9f" firstAttribute="trailing" secondItem="Mfq-BR-bwI" secondAttribute="trailing" id="HKL-Xi-zVY"/>
+                                            <constraint firstItem="Oy2-dR-IS2" firstAttribute="leading" secondItem="Mfq-BR-bwI" secondAttribute="leading" id="Mry-rO-Mfc"/>
+                                            <constraint firstItem="Y1U-sU-j35" firstAttribute="leading" secondItem="Mfq-BR-bwI" secondAttribute="leading" id="ief-QT-xMF"/>
+                                            <constraint firstItem="qKd-or-pWi" firstAttribute="centerX" secondItem="HCQ-nY-E7P" secondAttribute="centerX" id="kPn-WW-pcZ"/>
+                                            <constraint firstItem="eB2-9B-k9f" firstAttribute="leading" secondItem="Mfq-BR-bwI" secondAttribute="leading" id="lL0-6m-31T"/>
+                                            <constraint firstItem="KPZ-Fy-mSY" firstAttribute="centerX" secondItem="HCQ-nY-E7P" secondAttribute="centerX" id="plf-Lh-gTB"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="Mfq-BR-bwI"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="XwC-IY-bi1" firstAttribute="centerX" secondItem="4UI-3S-Vdu" secondAttribute="centerX" id="0Ym-JR-f3o"/>
+                                    <constraint firstItem="kbV-Ng-vaD" firstAttribute="centerX" secondItem="4UI-3S-Vdu" secondAttribute="centerX" id="EHF-dH-Ag7"/>
+                                    <constraint firstItem="HCQ-nY-E7P" firstAttribute="bottom" secondItem="4UI-3S-Vdu" secondAttribute="bottom" id="QRS-H4-LSl"/>
+                                    <constraint firstAttribute="height" constant="342" id="YF3-1n-Bvw"/>
+                                    <constraint firstItem="XwC-IY-bi1" firstAttribute="top" secondItem="kbV-Ng-vaD" secondAttribute="bottom" constant="7" id="YcW-Y4-Sgl"/>
+                                    <constraint firstItem="HCQ-nY-E7P" firstAttribute="trailing" secondItem="4UI-3S-Vdu" secondAttribute="trailing" constant="-12" id="kiv-RD-UmE"/>
+                                    <constraint firstItem="kbV-Ng-vaD" firstAttribute="top" secondItem="4UI-3S-Vdu" secondAttribute="top" constant="18" id="kyP-4S-vZ4"/>
+                                    <constraint firstItem="HCQ-nY-E7P" firstAttribute="leading" secondItem="4UI-3S-Vdu" secondAttribute="leading" constant="12" id="tmv-jq-1dg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0YZ-bD-cpo" firstAttribute="trailing" secondItem="2mz-7Z-L1U" secondAttribute="trailing" id="3mF-7R-tvW"/>
+                            <constraint firstItem="2mz-7Z-L1U" firstAttribute="trailing" secondItem="4UI-3S-Vdu" secondAttribute="trailing" constant="17" id="4Y6-d6-Jt1"/>
+                            <constraint firstItem="4UI-3S-Vdu" firstAttribute="top" secondItem="vpK-k9-CrS" secondAttribute="bottom" constant="84" id="EVy-Qm-l0h"/>
+                            <constraint firstItem="0YZ-bD-cpo" firstAttribute="leading" secondItem="2mz-7Z-L1U" secondAttribute="leading" id="OyK-J5-WIx"/>
+                            <constraint firstItem="vpK-k9-CrS" firstAttribute="centerX" secondItem="cYo-zm-tjK" secondAttribute="centerX" id="bCR-kP-H92"/>
+                            <constraint firstItem="2mz-7Z-L1U" firstAttribute="bottom" secondItem="0YZ-bD-cpo" secondAttribute="bottom" constant="-14" id="trO-RF-Jat"/>
+                            <constraint firstItem="vpK-k9-CrS" firstAttribute="top" secondItem="2mz-7Z-L1U" secondAttribute="top" constant="46" id="uAw-Iq-Qi2"/>
+                            <constraint firstItem="4UI-3S-Vdu" firstAttribute="leading" secondItem="2mz-7Z-L1U" secondAttribute="leading" constant="17" id="zG7-oJ-p9x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2mz-7Z-L1U"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lNi-5y-9dN"/>
+                    <connections>
+                        <outlet property="loginLabel" destination="qKd-or-pWi" id="zCb-QY-ib3"/>
+                        <outlet property="termsLabel" destination="KPZ-Fy-mSY" id="ouf-5Q-nFb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cu3-Ze-VZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2271" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Sto-D6-T8K">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="nib-cf-ElE" customClass="ViewController" customModule="the_snuggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DoP-gc-cPx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheSnuggoLogowhite" translatesAutoresizingMaskIntoConstraints="NO" id="RWh-j0-AtH">
+                                <rect key="frame" x="120.5" y="90" width="173" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="3Wz-Zl-Qn1"/>
+                                    <constraint firstAttribute="height" constant="86" id="dss-74-ZCP"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="qeg-fp-uhp"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9b-bl-J1X">
+                                <rect key="frame" x="0.0" y="690" width="414" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7c-en-2Ml" customClass="MainButton" customModule="the_snuggo" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="53" width="398" height="56"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="FMu-hD-g86"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="hDo-Zd-iUG"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Connect">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="czz-x4-jyB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="Bfl-qc-cAv"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="sTl-Cm-uKc"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jk5-j3-gV6">
+                                        <rect key="frame" x="0.0" y="185" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="brE-PX-g6V"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="o3t-Q1-TKN"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ChillBaby® Technologies LLC Product © 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRP-P5-7aN">
+                                        <rect key="frame" x="66.5" y="148" width="281.5" height="12"/>
+                                        <viewLayoutGuide key="safeArea" id="Swp-8Y-D00"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63529411759999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="h7c-en-2Ml" firstAttribute="centerY" secondItem="w9b-bl-J1X" secondAttribute="centerY" constant="-12" id="Ct5-bu-L4A"/>
+                                    <constraint firstAttribute="trailing" secondItem="jk5-j3-gV6" secondAttribute="trailing" id="Kxa-xP-jti"/>
+                                    <constraint firstItem="h7c-en-2Ml" firstAttribute="leading" secondItem="hgr-e7-ECT" secondAttribute="leading" constant="8" id="NAA-iB-deS"/>
+                                    <constraint firstItem="hRP-P5-7aN" firstAttribute="bottom" secondItem="w9b-bl-J1X" secondAttribute="bottom" constant="-26" id="TC8-LX-YdQ"/>
+                                    <constraint firstItem="hgr-e7-ECT" firstAttribute="trailing" secondItem="h7c-en-2Ml" secondAttribute="trailing" constant="8" id="W5M-7I-v9T"/>
+                                    <constraint firstItem="hRP-P5-7aN" firstAttribute="centerX" secondItem="w9b-bl-J1X" secondAttribute="centerX" id="WwX-jC-Tyk"/>
+                                    <constraint firstAttribute="height" constant="186" id="g0o-C7-0Z0"/>
+                                    <constraint firstAttribute="top" secondItem="czz-x4-jyB" secondAttribute="top" id="gzh-zH-1fD"/>
+                                    <constraint firstAttribute="leading" secondItem="czz-x4-jyB" secondAttribute="leading" id="kJD-dO-N9a"/>
+                                    <constraint firstAttribute="trailing" secondItem="czz-x4-jyB" secondAttribute="trailing" id="l9F-17-osx"/>
+                                    <constraint firstAttribute="leading" secondItem="jk5-j3-gV6" secondAttribute="leading" id="ptm-yu-5Ca"/>
+                                    <constraint firstAttribute="bottom" secondItem="jk5-j3-gV6" secondAttribute="bottom" id="qMy-ty-dgg"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="hgr-e7-ECT"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7X4-PO-dTj" userLabel="main popup" customClass="LoginUIView" customModule="the_snuggo" customModuleProvider="target">
+                                <rect key="frame" x="17" y="260" width="380" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations you have successfully registered" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSk-Tb-JeK">
+                                        <rect key="frame" x="12" y="151" width="380" height="40"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="CBi-Y4-EUS"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="XMN-0Y-gTs"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="lSk-Tb-JeK" firstAttribute="leading" secondItem="7X4-PO-dTj" secondAttribute="leading" constant="12" id="GfE-T7-h0k"/>
+                                    <constraint firstItem="lSk-Tb-JeK" firstAttribute="centerY" secondItem="7X4-PO-dTj" secondAttribute="centerY" id="ZDJ-6Q-HOz"/>
+                                    <constraint firstAttribute="height" constant="342" id="eeR-Iu-R8C"/>
+                                    <constraint firstAttribute="trailing" secondItem="lSk-Tb-JeK" secondAttribute="trailing" constant="-12" id="p8s-0y-2uj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yxD-PI-Ab3" firstAttribute="trailing" secondItem="7X4-PO-dTj" secondAttribute="trailing" constant="17" id="0Wz-zc-gjt"/>
+                            <constraint firstItem="RWh-j0-AtH" firstAttribute="top" secondItem="yxD-PI-Ab3" secondAttribute="top" constant="46" id="Jhg-5d-SQg"/>
+                            <constraint firstItem="w9b-bl-J1X" firstAttribute="trailing" secondItem="yxD-PI-Ab3" secondAttribute="trailing" id="Jpr-SH-MUL"/>
+                            <constraint firstItem="w9b-bl-J1X" firstAttribute="leading" secondItem="yxD-PI-Ab3" secondAttribute="leading" id="PUb-M5-iCs"/>
+                            <constraint firstItem="7X4-PO-dTj" firstAttribute="leading" secondItem="yxD-PI-Ab3" secondAttribute="leading" constant="17" id="YhW-yn-Uly"/>
+                            <constraint firstItem="RWh-j0-AtH" firstAttribute="centerX" secondItem="DoP-gc-cPx" secondAttribute="centerX" id="aeR-YH-K1u"/>
+                            <constraint firstItem="7X4-PO-dTj" firstAttribute="top" secondItem="RWh-j0-AtH" secondAttribute="bottom" constant="84" id="eBl-xp-4FA"/>
+                            <constraint firstItem="yxD-PI-Ab3" firstAttribute="bottom" secondItem="w9b-bl-J1X" secondAttribute="bottom" constant="-14" id="uqK-vV-FmS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yxD-PI-Ab3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pY5-gI-Sx2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Drb-kH-CVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2977" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CHn-23-PAS">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="3yM-yl-D62" customClass="ViewController" customModule="the_snuggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YyL-py-lQV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheSnuggoLogowhite" translatesAutoresizingMaskIntoConstraints="NO" id="j1V-Kn-R8Z">
+                                <rect key="frame" x="120.5" y="90" width="173" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="2co-Pu-jBe"/>
+                                    <constraint firstAttribute="width" constant="173" id="hn9-BT-mbS"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="KRe-vJ-4vp"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b77-9Q-wOE">
+                                <rect key="frame" x="0.0" y="690" width="414" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDG-Qm-fdv" customClass="MainButton" customModule="the_snuggo" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="53" width="398" height="56"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="f6i-nV-Ktf"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="9Ea-CR-ItJ"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DNv-by-kVl" kind="custom" customClass="DismissSegue" customModule="the_snuggo" customModuleProvider="target" id="Wge-xz-xwh"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jwi-AA-99Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="7sU-5P-euI"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="IgR-ts-ZXE"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fX9-8c-66n">
+                                        <rect key="frame" x="0.0" y="185" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="tDp-iu-yuJ"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="psV-bD-pQg"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ChillBaby® Technologies LLC Product © 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cg-s9-IGa">
+                                        <rect key="frame" x="66.5" y="148" width="281.5" height="12"/>
+                                        <viewLayoutGuide key="safeArea" id="cFd-vv-TS6"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63529411759999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="leading" secondItem="Jwi-AA-99Z" secondAttribute="leading" id="ACr-rz-PG8"/>
+                                    <constraint firstItem="3Cg-s9-IGa" firstAttribute="centerX" secondItem="b77-9Q-wOE" secondAttribute="centerX" id="C5c-L8-q74"/>
+                                    <constraint firstAttribute="height" constant="186" id="DAh-2d-FRx"/>
+                                    <constraint firstAttribute="leading" secondItem="fX9-8c-66n" secondAttribute="leading" id="FAz-9k-7aZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jwi-AA-99Z" secondAttribute="trailing" id="FRj-M4-Lk2"/>
+                                    <constraint firstAttribute="bottom" secondItem="fX9-8c-66n" secondAttribute="bottom" id="PpU-2y-jL4"/>
+                                    <constraint firstItem="3Cg-s9-IGa" firstAttribute="bottom" secondItem="b77-9Q-wOE" secondAttribute="bottom" constant="-26" id="RBB-AB-cCp"/>
+                                    <constraint firstItem="tDG-Qm-fdv" firstAttribute="centerY" secondItem="b77-9Q-wOE" secondAttribute="centerY" constant="-12" id="clS-4H-2fr"/>
+                                    <constraint firstAttribute="top" secondItem="Jwi-AA-99Z" secondAttribute="top" id="d4r-WL-04k"/>
+                                    <constraint firstItem="uqe-kV-DrJ" firstAttribute="trailing" secondItem="tDG-Qm-fdv" secondAttribute="trailing" constant="8" id="dd6-fF-YhO"/>
+                                    <constraint firstItem="tDG-Qm-fdv" firstAttribute="leading" secondItem="uqe-kV-DrJ" secondAttribute="leading" constant="8" id="eie-6Z-CGQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="fX9-8c-66n" secondAttribute="trailing" id="tdr-y2-pE0"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="uqe-kV-DrJ"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlk-eD-WFF" userLabel="main popup" customClass="LoginUIView" customModule="the_snuggo" customModuleProvider="target">
+                                <rect key="frame" x="17" y="260" width="380" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password reset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu1-P0-b3E">
+                                        <rect key="frame" x="113.5" y="18" width="153" height="20"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="0Sk-3F-2qr"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="DNT-AH-ZMm"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="kWS-2j-Klg" userLabel="Controls">
+                                        <rect key="frame" x="12" y="72" width="356" height="190"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please type in your E-mail address and follow the reset password instructions." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuq-Pv-sGi" userLabel="name">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="37"/>
+                                                <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="Uk7-Lk-1g0"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="JUB-Ek-ho1"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4uR-yu-0zR" userLabel="Name" customClass="LoginTextField" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="51" width="356" height="36"/>
+                                                <color key="backgroundColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="0.23999999999999999" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="Rdb-9U-yXA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="name"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsF-yh-TGS" userLabel="left bar">
+                                                <rect key="frame" x="0.0" y="101" width="356" height="1"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.28235294119999998" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="6QH-Kt-Rjd"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="Dva-kc-w55"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0N-sQ-u0R" userLabel="Red Button" customClass="LoginButton" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="122" y="116" width="112" height="39"/>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.17254901959999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="4hS-XM-DVt"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="rh8-e6-aLj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="clB-dK-n0M" kind="show" id="GNM-6X-VjE"/>
+                                                </connections>
+                                            </button>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doX-bu-DJY" userLabel="login">
+                                                <rect key="frame" x="98.5" y="169" width="159" height="21"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="Q4f-1E-Zl5"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="jd8-R4-1GA"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Have an account? ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="LOGIN">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.19608" green="0.50588" blue="0.86667000000000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="12" name="HiraginoSans-W3"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="3yM-yl-D62" id="uli-xH-uHA"/>
+                                                </connections>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4uR-yu-0zR" firstAttribute="trailing" secondItem="hmZ-xJ-pgC" secondAttribute="trailing" id="7pz-cX-swK"/>
+                                            <constraint firstItem="Nuq-Pv-sGi" firstAttribute="leading" secondItem="hmZ-xJ-pgC" secondAttribute="leading" id="9C7-N9-2tQ"/>
+                                            <constraint firstItem="doX-bu-DJY" firstAttribute="centerX" secondItem="kWS-2j-Klg" secondAttribute="centerX" id="Nom-id-EWs"/>
+                                            <constraint firstItem="Nuq-Pv-sGi" firstAttribute="trailing" secondItem="hmZ-xJ-pgC" secondAttribute="trailing" id="YMY-Fo-WMg"/>
+                                            <constraint firstItem="KsF-yh-TGS" firstAttribute="trailing" secondItem="hmZ-xJ-pgC" secondAttribute="trailing" id="dbe-Oy-HEM"/>
+                                            <constraint firstItem="KsF-yh-TGS" firstAttribute="leading" secondItem="hmZ-xJ-pgC" secondAttribute="leading" id="rkl-Nf-Ndy"/>
+                                            <constraint firstItem="4uR-yu-0zR" firstAttribute="leading" secondItem="hmZ-xJ-pgC" secondAttribute="leading" id="vuZ-eR-QeK"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="hmZ-xJ-pgC"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="kWS-2j-Klg" firstAttribute="leading" secondItem="hlk-eD-WFF" secondAttribute="leading" constant="12" id="EhZ-f9-SYT"/>
+                                    <constraint firstItem="Vu1-P0-b3E" firstAttribute="centerX" secondItem="hlk-eD-WFF" secondAttribute="centerX" id="EzU-cb-TDC"/>
+                                    <constraint firstItem="Vu1-P0-b3E" firstAttribute="top" secondItem="hlk-eD-WFF" secondAttribute="top" constant="18" id="Uff-Yh-sId"/>
+                                    <constraint firstAttribute="height" constant="342" id="Y9B-jB-9Lq"/>
+                                    <constraint firstItem="kWS-2j-Klg" firstAttribute="trailing" secondItem="hlk-eD-WFF" secondAttribute="trailing" constant="-12" id="cMp-X5-bmf"/>
+                                    <constraint firstItem="kWS-2j-Klg" firstAttribute="top" secondItem="Vu1-P0-b3E" secondAttribute="bottom" constant="34" id="ji7-ul-0yK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="b77-9Q-wOE" firstAttribute="trailing" secondItem="gKM-9a-tws" secondAttribute="trailing" id="4eS-QH-MCK"/>
+                            <constraint firstItem="gKM-9a-tws" firstAttribute="trailing" secondItem="hlk-eD-WFF" secondAttribute="trailing" constant="17" id="88x-vv-Ty8"/>
+                            <constraint firstItem="b77-9Q-wOE" firstAttribute="leading" secondItem="gKM-9a-tws" secondAttribute="leading" id="9cB-uz-tkL"/>
+                            <constraint firstItem="gKM-9a-tws" firstAttribute="bottom" secondItem="b77-9Q-wOE" secondAttribute="bottom" constant="-14" id="WCX-NA-Tqm"/>
+                            <constraint firstItem="hlk-eD-WFF" firstAttribute="top" secondItem="j1V-Kn-R8Z" secondAttribute="bottom" constant="84" id="c5q-dk-Gkq"/>
+                            <constraint firstItem="hlk-eD-WFF" firstAttribute="leading" secondItem="gKM-9a-tws" secondAttribute="leading" constant="17" id="fmM-lp-WKY"/>
+                            <constraint firstItem="j1V-Kn-R8Z" firstAttribute="top" secondItem="gKM-9a-tws" secondAttribute="top" constant="46" id="v2P-N2-DOP"/>
+                            <constraint firstItem="j1V-Kn-R8Z" firstAttribute="centerX" secondItem="YyL-py-lQV" secondAttribute="centerX" id="z0w-tn-dtC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gKM-9a-tws"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r0D-Ka-1gV"/>
+                    <connections>
+                        <outlet property="loginLabel" destination="doX-bu-DJY" id="ddQ-UC-LAH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYm-cH-7J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-331"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O1c-1K-sC4">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="clB-dK-n0M" customClass="ViewController" customModule="the_snuggo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M3h-6w-WCy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TheSnuggoLogowhite" translatesAutoresizingMaskIntoConstraints="NO" id="wP2-16-NUA">
+                                <rect key="frame" x="120.5" y="90" width="173" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="75J-rd-tK5"/>
+                                    <constraint firstAttribute="height" constant="86" id="Krk-8g-4qw"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="1Fd-hh-6zu"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gO-Ug-Lqa">
+                                <rect key="frame" x="0.0" y="690" width="414" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ufd-RE-Ajy" customClass="MainButton" customModule="the_snuggo" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="53" width="398" height="56"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="hG3-LE-qpq"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="wdN-MB-a4w"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="3yM-yl-D62" kind="custom" customClass="DismissSegue" customModule="the_snuggo" customModuleProvider="target" id="W9j-Nk-8tb"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDC-n1-DYW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="ayZ-k2-34a"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="R0p-wB-69A"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SOU-d1-I2h">
+                                        <rect key="frame" x="0.0" y="185" width="414" height="1"/>
+                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74117647060000003" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="drK-gV-DQb"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="njl-Fc-sVV"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A ChillBaby® Technologies LLC Product © 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngQ-6R-dZw">
+                                        <rect key="frame" x="66.5" y="148" width="281.5" height="12"/>
+                                        <viewLayoutGuide key="safeArea" id="neb-cG-t56"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63529411759999999" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="leading" secondItem="yDC-n1-DYW" secondAttribute="leading" id="0GS-0o-CD8"/>
+                                    <constraint firstAttribute="height" constant="186" id="BQY-CV-ole"/>
+                                    <constraint firstAttribute="leading" secondItem="SOU-d1-I2h" secondAttribute="leading" id="IRN-bg-ilg"/>
+                                    <constraint firstAttribute="bottom" secondItem="SOU-d1-I2h" secondAttribute="bottom" id="N6p-LW-m06"/>
+                                    <constraint firstAttribute="trailing" secondItem="SOU-d1-I2h" secondAttribute="trailing" id="NxA-3Z-bpk"/>
+                                    <constraint firstAttribute="trailing" secondItem="yDC-n1-DYW" secondAttribute="trailing" id="bdW-Sd-Rou"/>
+                                    <constraint firstItem="Ufd-RE-Ajy" firstAttribute="leading" secondItem="4F4-Tq-pPV" secondAttribute="leading" constant="8" id="ceA-4Y-ehj"/>
+                                    <constraint firstItem="ngQ-6R-dZw" firstAttribute="bottom" secondItem="0gO-Ug-Lqa" secondAttribute="bottom" constant="-26" id="g2o-db-Wy8"/>
+                                    <constraint firstAttribute="top" secondItem="yDC-n1-DYW" secondAttribute="top" id="hNf-9K-5we"/>
+                                    <constraint firstItem="4F4-Tq-pPV" firstAttribute="trailing" secondItem="Ufd-RE-Ajy" secondAttribute="trailing" constant="8" id="nEZ-4C-w8m"/>
+                                    <constraint firstItem="ngQ-6R-dZw" firstAttribute="centerX" secondItem="0gO-Ug-Lqa" secondAttribute="centerX" id="r9g-hM-NAG"/>
+                                    <constraint firstItem="Ufd-RE-Ajy" firstAttribute="centerY" secondItem="0gO-Ug-Lqa" secondAttribute="centerY" constant="-12" id="yfN-5z-y0n"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="4F4-Tq-pPV"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIq-t8-Ki0" userLabel="main popup" customClass="LoginUIView" customModule="the_snuggo" customModuleProvider="target">
+                                <rect key="frame" x="17" y="260" width="380" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password reset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdb-jp-SnA">
+                                        <rect key="frame" x="113.5" y="18" width="153" height="20"/>
+                                        <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="VP2-Pb-m8w"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="3Ph-f1-QX6"/>
+                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="YUC-3M-ARi" userLabel="Controls">
+                                        <rect key="frame" x="12" y="72" width="356" height="159"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS! Check you Inbox for instructions on resetting your password." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFN-Yk-mBc" userLabel="name">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="37"/>
+                                                <color key="tintColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="aQl-hH-nkR"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="qCk-zo-6ym"/>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zP-Ur-Jmr">
+                                                <rect key="frame" x="58" y="51" width="240" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="RRf-sK-ZL9"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HKF-Dn-md4" userLabel="left bar">
+                                                <rect key="frame" x="0.0" y="105" width="356" height="1"/>
+                                                <color key="backgroundColor" red="0.96862745100000003" green="0.28235294119999998" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="8db-Py-eb8"/>
+                                                </constraints>
+                                                <viewLayoutGuide key="safeArea" id="rvz-pD-xWY"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YV2-c4-bUI" userLabel="Red Button" customClass="LoginButton" customModule="the_snuggo" customModuleProvider="target">
+                                                <rect key="frame" x="122" y="120" width="112" height="39"/>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.17254901959999999" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="RVG-ta-RFs"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="adT-1C-tgM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="gotoLogin:" destination="clB-dK-n0M" eventType="touchUpInside" id="wV0-Jq-3gH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="HKF-Dn-md4" firstAttribute="trailing" secondItem="9vJ-CF-3h7" secondAttribute="trailing" id="AG6-6H-dZ3"/>
+                                            <constraint firstItem="OFN-Yk-mBc" firstAttribute="trailing" secondItem="9vJ-CF-3h7" secondAttribute="trailing" id="UDJ-xR-geU"/>
+                                            <constraint firstItem="HKF-Dn-md4" firstAttribute="leading" secondItem="9vJ-CF-3h7" secondAttribute="leading" id="dI0-lC-G3o"/>
+                                            <constraint firstItem="OFN-Yk-mBc" firstAttribute="leading" secondItem="9vJ-CF-3h7" secondAttribute="leading" id="qkp-oh-HSf"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="9vJ-CF-3h7"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Zdb-jp-SnA" firstAttribute="top" secondItem="aIq-t8-Ki0" secondAttribute="top" constant="18" id="BZe-sy-DcW"/>
+                                    <constraint firstItem="YUC-3M-ARi" firstAttribute="trailing" secondItem="aIq-t8-Ki0" secondAttribute="trailing" constant="-12" id="Kpy-YI-Umd"/>
+                                    <constraint firstItem="YUC-3M-ARi" firstAttribute="top" secondItem="Zdb-jp-SnA" secondAttribute="bottom" constant="34" id="Pcr-lz-SCW"/>
+                                    <constraint firstAttribute="height" constant="342" id="TCx-ad-reO"/>
+                                    <constraint firstItem="YUC-3M-ARi" firstAttribute="leading" secondItem="aIq-t8-Ki0" secondAttribute="leading" constant="12" id="ado-f1-qJP"/>
+                                    <constraint firstItem="Zdb-jp-SnA" firstAttribute="centerX" secondItem="aIq-t8-Ki0" secondAttribute="centerX" id="ahc-Fm-vUk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.27450980390000002" green="0.60784313729999995" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aIq-t8-Ki0" firstAttribute="top" secondItem="wP2-16-NUA" secondAttribute="bottom" constant="84" id="7m6-R2-bnm"/>
+                            <constraint firstItem="wP2-16-NUA" firstAttribute="top" secondItem="2tQ-Ya-lBt" secondAttribute="top" constant="46" id="E4g-we-Dng"/>
+                            <constraint firstItem="2tQ-Ya-lBt" firstAttribute="trailing" secondItem="aIq-t8-Ki0" secondAttribute="trailing" constant="17" id="FRg-xD-yBk"/>
+                            <constraint firstItem="aIq-t8-Ki0" firstAttribute="leading" secondItem="2tQ-Ya-lBt" secondAttribute="leading" constant="17" id="YKg-01-zya"/>
+                            <constraint firstItem="2tQ-Ya-lBt" firstAttribute="bottom" secondItem="0gO-Ug-Lqa" secondAttribute="bottom" constant="-14" id="ZOj-dh-g9X"/>
+                            <constraint firstItem="0gO-Ug-Lqa" firstAttribute="trailing" secondItem="2tQ-Ya-lBt" secondAttribute="trailing" id="Zpl-rk-HZj"/>
+                            <constraint firstItem="0gO-Ug-Lqa" firstAttribute="leading" secondItem="2tQ-Ya-lBt" secondAttribute="leading" id="hEN-l1-ZLE"/>
+                            <constraint firstItem="wP2-16-NUA" firstAttribute="centerX" secondItem="M3h-6w-WCy" secondAttribute="centerX" id="oAE-YF-rNB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2tQ-Ya-lBt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kTK-Aa-wNT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSW-SM-WDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661" y="-331"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="W9j-Nk-8tb"/>
+        <segue reference="pM2-TU-CAY"/>
+        <segue reference="Wge-xz-xwh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="TheSnuggoLogowhite" width="86.5" height="43"/>
         <image name="chillbaby1" width="139.5" height="153"/>
