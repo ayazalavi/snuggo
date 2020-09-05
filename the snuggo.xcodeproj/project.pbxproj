@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B597DA7A2503429D004F03AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA792503429D004F03AE /* AppDelegate.swift */; };
+		B597DA7C2503429D004F03AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA7B2503429D004F03AE /* SceneDelegate.swift */; };
+		B597DA7E2503429D004F03AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA7D2503429D004F03AE /* ViewController.swift */; };
+		B597DA812503429D004F03AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B597DA7F2503429D004F03AE /* Main.storyboard */; };
+		B597DA83250342A3004F03AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B597DA82250342A3004F03AE /* Assets.xcassets */; };
+		B597DA86250342A3004F03AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B597DA84250342A3004F03AE /* LaunchScreen.storyboard */; };
+		B597DA91250342A3004F03AE /* the_snuggoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA90250342A3004F03AE /* the_snuggoTests.swift */; };
+		B597DA9C250342A3004F03AE /* the_snuggoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA9B250342A3004F03AE /* the_snuggoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B597DA8D250342A3004F03AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B597DA6E2503429D004F03AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B597DA752503429D004F03AE;
+			remoteInfo = "the snuggo";
+		};
+		B597DA98250342A3004F03AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B597DA6E2503429D004F03AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B597DA752503429D004F03AE;
+			remoteInfo = "the snuggo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B597DA762503429D004F03AE /* the snuggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the snuggo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B597DA792503429D004F03AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B597DA7B2503429D004F03AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B597DA7D2503429D004F03AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B597DA802503429D004F03AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B597DA82250342A3004F03AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B597DA85250342A3004F03AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B597DA87250342A3004F03AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B597DA8C250342A3004F03AE /* the snuggoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the snuggoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B597DA90250342A3004F03AE /* the_snuggoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_snuggoTests.swift; sourceTree = "<group>"; };
+		B597DA92250342A3004F03AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B597DA97250342A3004F03AE /* the snuggoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "the snuggoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B597DA9B250342A3004F03AE /* the_snuggoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_snuggoUITests.swift; sourceTree = "<group>"; };
+		B597DA9D250342A3004F03AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B597DA732503429D004F03AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B597DA89250342A3004F03AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B597DA94250342A3004F03AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B597DA6D2503429D004F03AE = {
+			isa = PBXGroup;
+			children = (
+				B597DA782503429D004F03AE /* the snuggo */,
+				B597DA8F250342A3004F03AE /* the snuggoTests */,
+				B597DA9A250342A3004F03AE /* the snuggoUITests */,
+				B597DA772503429D004F03AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B597DA772503429D004F03AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B597DA762503429D004F03AE /* the snuggo.app */,
+				B597DA8C250342A3004F03AE /* the snuggoTests.xctest */,
+				B597DA97250342A3004F03AE /* the snuggoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B597DA782503429D004F03AE /* the snuggo */ = {
+			isa = PBXGroup;
+			children = (
+				B597DA792503429D004F03AE /* AppDelegate.swift */,
+				B597DA7B2503429D004F03AE /* SceneDelegate.swift */,
+				B597DA7D2503429D004F03AE /* ViewController.swift */,
+				B597DA7F2503429D004F03AE /* Main.storyboard */,
+				B597DA82250342A3004F03AE /* Assets.xcassets */,
+				B597DA84250342A3004F03AE /* LaunchScreen.storyboard */,
+				B597DA87250342A3004F03AE /* Info.plist */,
+			);
+			path = "the snuggo";
+			sourceTree = "<group>";
+		};
+		B597DA8F250342A3004F03AE /* the snuggoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B597DA90250342A3004F03AE /* the_snuggoTests.swift */,
+				B597DA92250342A3004F03AE /* Info.plist */,
+			);
+			path = "the snuggoTests";
+			sourceTree = "<group>";
+		};
+		B597DA9A250342A3004F03AE /* the snuggoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B597DA9B250342A3004F03AE /* the_snuggoUITests.swift */,
+				B597DA9D250342A3004F03AE /* Info.plist */,
+			);
+			path = "the snuggoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B597DA752503429D004F03AE /* the snuggo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B597DAA0250342A3004F03AE /* Build configuration list for PBXNativeTarget "the snuggo" */;
+			buildPhases = (
+				B597DA722503429D004F03AE /* Sources */,
+				B597DA732503429D004F03AE /* Frameworks */,
+				B597DA742503429D004F03AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "the snuggo";
+			productName = "the snuggo";
+			productReference = B597DA762503429D004F03AE /* the snuggo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B597DA8B250342A3004F03AE /* the snuggoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B597DAA3250342A3004F03AE /* Build configuration list for PBXNativeTarget "the snuggoTests" */;
+			buildPhases = (
+				B597DA88250342A3004F03AE /* Sources */,
+				B597DA89250342A3004F03AE /* Frameworks */,
+				B597DA8A250342A3004F03AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B597DA8E250342A3004F03AE /* PBXTargetDependency */,
+			);
+			name = "the snuggoTests";
+			productName = "the snuggoTests";
+			productReference = B597DA8C250342A3004F03AE /* the snuggoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B597DA96250342A3004F03AE /* the snuggoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B597DAA6250342A3004F03AE /* Build configuration list for PBXNativeTarget "the snuggoUITests" */;
+			buildPhases = (
+				B597DA93250342A3004F03AE /* Sources */,
+				B597DA94250342A3004F03AE /* Frameworks */,
+				B597DA95250342A3004F03AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B597DA99250342A3004F03AE /* PBXTargetDependency */,
+			);
+			name = "the snuggoUITests";
+			productName = "the snuggoUITests";
+			productReference = B597DA97250342A3004F03AE /* the snuggoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B597DA6E2503429D004F03AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Ayaz Alavi";
+				TargetAttributes = {
+					B597DA752503429D004F03AE = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					B597DA8B250342A3004F03AE = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = B597DA752503429D004F03AE;
+					};
+					B597DA96250342A3004F03AE = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = B597DA752503429D004F03AE;
+					};
+				};
+			};
+			buildConfigurationList = B597DA712503429D004F03AE /* Build configuration list for PBXProject "the snuggo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B597DA6D2503429D004F03AE;
+			productRefGroup = B597DA772503429D004F03AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B597DA752503429D004F03AE /* the snuggo */,
+				B597DA8B250342A3004F03AE /* the snuggoTests */,
+				B597DA96250342A3004F03AE /* the snuggoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B597DA742503429D004F03AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B597DA86250342A3004F03AE /* LaunchScreen.storyboard in Resources */,
+				B597DA83250342A3004F03AE /* Assets.xcassets in Resources */,
+				B597DA812503429D004F03AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B597DA8A250342A3004F03AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B597DA95250342A3004F03AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B597DA722503429D004F03AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B597DA7E2503429D004F03AE /* ViewController.swift in Sources */,
+				B597DA7A2503429D004F03AE /* AppDelegate.swift in Sources */,
+				B597DA7C2503429D004F03AE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B597DA88250342A3004F03AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B597DA91250342A3004F03AE /* the_snuggoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B597DA93250342A3004F03AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B597DA9C250342A3004F03AE /* the_snuggoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B597DA8E250342A3004F03AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B597DA752503429D004F03AE /* the snuggo */;
+			targetProxy = B597DA8D250342A3004F03AE /* PBXContainerItemProxy */;
+		};
+		B597DA99250342A3004F03AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B597DA752503429D004F03AE /* the snuggo */;
+			targetProxy = B597DA98250342A3004F03AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B597DA7F2503429D004F03AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B597DA802503429D004F03AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B597DA84250342A3004F03AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B597DA85250342A3004F03AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B597DA9E250342A3004F03AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B597DA9F250342A3004F03AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B597DAA1250342A3004F03AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D394BCDFH;
+				INFOPLIST_FILE = "the snuggo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.client.noman.snuggo.the-snuggo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B597DAA2250342A3004F03AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D394BCDFH;
+				INFOPLIST_FILE = "the snuggo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.client.noman.snuggo.the-snuggo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B597DAA4250342A3004F03AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D394BCDFH;
+				INFOPLIST_FILE = "the snuggoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.client.noman.snuggo.the-snuggoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the snuggo.app/the snuggo";
+			};
+			name = Debug;
+		};
+		B597DAA5250342A3004F03AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D394BCDFH;
+				INFOPLIST_FILE = "the snuggoTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.client.noman.snuggo.the-snuggoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/the snuggo.app/the snuggo";
+			};
+			name = Release;
+		};
+		B597DAA7250342A3004F03AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D394BCDFH;
+				INFOPLIST_FILE = "the snuggoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.client.noman.snuggo.the-snuggoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "the snuggo";
+			};
+			name = Debug;
+		};
+		B597DAA8250342A3004F03AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5D394BCDFH;
+				INFOPLIST_FILE = "the snuggoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.client.noman.snuggo.the-snuggoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "the snuggo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B597DA712503429D004F03AE /* Build configuration list for PBXProject "the snuggo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B597DA9E250342A3004F03AE /* Debug */,
+				B597DA9F250342A3004F03AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B597DAA0250342A3004F03AE /* Build configuration list for PBXNativeTarget "the snuggo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B597DAA1250342A3004F03AE /* Debug */,
+				B597DAA2250342A3004F03AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B597DAA3250342A3004F03AE /* Build configuration list for PBXNativeTarget "the snuggoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B597DAA4250342A3004F03AE /* Debug */,
+				B597DAA5250342A3004F03AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B597DAA6250342A3004F03AE /* Build configuration list for PBXNativeTarget "the snuggoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B597DAA7250342A3004F03AE /* Debug */,
+				B597DAA8250342A3004F03AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B597DA6E2503429D004F03AE /* Project object */;
+}
