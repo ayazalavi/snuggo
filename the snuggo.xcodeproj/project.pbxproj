@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56C125A250640E400D827E8 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C1259250640E400D827E8 /* Dashboard.swift */; };
+		B56C125C250648CF00D827E8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C125B250648CF00D827E8 /* Data.swift */; };
+		B56C125E25064D0F00D827E8 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C125D25064D0F00D827E8 /* QRScannerView.swift */; };
+		B56C126025064D8F00D827E8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C125F25064D8E00D827E8 /* QRScannerViewController.swift */; };
+		B56C12622506516000D827E8 /* ProductFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C12612506516000D827E8 /* ProductFoundViewController.swift */; };
 		B597DA7A2503429D004F03AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA792503429D004F03AE /* AppDelegate.swift */; };
 		B597DA7C2503429D004F03AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA7B2503429D004F03AE /* SceneDelegate.swift */; };
 		B597DA7E2503429D004F03AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA7D2503429D004F03AE /* ViewController.swift */; };
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B56C1259250640E400D827E8 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		B56C125B250648CF00D827E8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B56C125D25064D0F00D827E8 /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		B56C125F25064D8E00D827E8 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		B56C12612506516000D827E8 /* ProductFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFoundViewController.swift; sourceTree = "<group>"; };
 		B597DA762503429D004F03AE /* the snuggo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "the snuggo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B597DA792503429D004F03AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B597DA7B2503429D004F03AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,11 +118,15 @@
 				B597DAA925035FD1004F03AE /* Custom Views */,
 				B597DA792503429D004F03AE /* AppDelegate.swift */,
 				B597DA7B2503429D004F03AE /* SceneDelegate.swift */,
+				B56C1259250640E400D827E8 /* Dashboard.swift */,
 				B597DA7D2503429D004F03AE /* ViewController.swift */,
 				B597DA7F2503429D004F03AE /* Main.storyboard */,
 				B597DA82250342A3004F03AE /* Assets.xcassets */,
 				B597DA84250342A3004F03AE /* LaunchScreen.storyboard */,
 				B597DA87250342A3004F03AE /* Info.plist */,
+				B56C125B250648CF00D827E8 /* Data.swift */,
+				B56C125F25064D8E00D827E8 /* QRScannerViewController.swift */,
+				B56C12612506516000D827E8 /* ProductFoundViewController.swift */,
 			);
 			path = "the snuggo";
 			sourceTree = "<group>";
@@ -138,6 +152,7 @@
 		B597DAA925035FD1004F03AE /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				B56C125D25064D0F00D827E8 /* QRScannerView.swift */,
 				B597DAAA25036044004F03AE /* LoginUIView.swift */,
 				B597DAAC25036512004F03AE /* LoginButtons.swift */,
 				B597DAAE25037651004F03AE /* LoginTextField.swift */,
@@ -276,12 +291,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56C126025064D8F00D827E8 /* QRScannerViewController.swift in Sources */,
 				B597DAAD25036512004F03AE /* LoginButtons.swift in Sources */,
 				B597DA7E2503429D004F03AE /* ViewController.swift in Sources */,
 				B597DA7A2503429D004F03AE /* AppDelegate.swift in Sources */,
 				B597DAAF25037651004F03AE /* LoginTextField.swift in Sources */,
+				B56C125E25064D0F00D827E8 /* QRScannerView.swift in Sources */,
 				B597DAAB25036044004F03AE /* LoginUIView.swift in Sources */,
+				B56C125A250640E400D827E8 /* Dashboard.swift in Sources */,
 				B597DA7C2503429D004F03AE /* SceneDelegate.swift in Sources */,
+				B56C12622506516000D827E8 /* ProductFoundViewController.swift in Sources */,
+				B56C125C250648CF00D827E8 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
