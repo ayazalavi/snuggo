@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Dashboard: UIViewController {
+class DashboardViewController: UIViewController {
 
     @IBOutlet weak var pager: UIView!
     @IBOutlet weak var product_image: UIImageView!
@@ -31,6 +31,9 @@ class Dashboard: UIViewController {
         swipeRight.direction = .right
         self.parent_view.addGestureRecognizer(swipeLeft)
         self.parent_view.addGestureRecognizer(swipeRight)
+        
+        let tapProduct = UITapGestureRecognizer(target: self, action: #selector(tapProduct(_:)))
+        self.product_image.addGestureRecognizer(tapProduct)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,6 +46,7 @@ class Dashboard: UIViewController {
         self.parent_view.isHidden = false
         self.products = products
         self.loadPager()
+        BluetoothScanner.shared.startScanning()
     }
     
     func loadPager() {
@@ -55,19 +59,27 @@ class Dashboard: UIViewController {
         self.pager.subviews[current % 2].alpha = 1
     }
     
+    @objc func tapProduct(_ gesture: UIGestureRecognizer) {
+        self.performSegue(withIdentifier: "product", sender: self)
+    }
+    
     @objc func gotoCameraScreen() {
         self.performSegue(withIdentifier: "camera", sender: self)
     }
+    
+    
     
     @objc func swipeProducts(_ gesture: UIGestureRecognizer) {
         guard let products = products, !self.animating, self.product_image != nil else { return }
         let group = DispatchGroup()
         group.notify(queue: .main) {
             self.animating = false
-            print("Animation ended")
+            //print(self.product_image.gestureRecognizers)
+            //print("Animation ended")
         }
         group.enter()
-        print("Animation started")
+        //print(self.product_image.gestureRecognizers)
+        //print("Animation started")
         let frame = product_image.frame
         if let swipe = gesture as? UISwipeGestureRecognizer {
             let current_ = swipe.direction == .right ? max(current - 1, 0) : min(current + 1, products.count - 1)
@@ -91,26 +103,20 @@ class Dashboard: UIViewController {
                 self.product_image = nil
             }) { (_) in
                 self.product_image = imageView
+                let tapProduct = UITapGestureRecognizer(target: self, action: #selector(self.tapProduct(_:)))
+                self.product_image.addGestureRecognizer(tapProduct)
                 group.leave()
             }
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "product", let viewController = segue.destination as? ProductDashboard {
+               viewController.product = self.products?[current]
+           }
+       }
+    
 }
 
-extension UIButton {
-    
-    static func customButton (image: UIImage, tintColor: UIColor, selector: Selector?, target: Any?) -> UIButton {
-        let backButton = UIButton(type: .custom)
-        backButton.frame = .zero
-        backButton.setImage(image, for: .normal)
-        backButton.setImage(image, for: .highlighted)
-        backButton.setImage(image, for: .selected)
-        if let selector = selector {
-            backButton.addTarget(target, action: selector, for: .touchUpInside)
-        }
-        backButton.imageView?.tintColor = tintColor
-        return backButton
-    }
-}
+
 
