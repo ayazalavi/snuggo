@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UserNotifications
+
+struct NotificationManager {
+    static func sendNotifications(title: String, message: String, type: NotificationType) {
+      let content = UNMutableNotificationContent()
+      content.title = title
+      content.body = message
+      content.sound = UNNotificationSound.default
+      content.badge = 1
+      UNUserNotificationCenter.current().add(UNNotificationRequest(identifier: type.rawValue, content: content, trigger: nil)) { (error) in
+         // //print(error)
+      }
+   }
+}

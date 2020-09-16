@@ -37,18 +37,12 @@ class ViewController: UIViewController, UITextViewDelegate {
     }
     
     func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
-        switch URL.absoluteString {
-            case "Login":
-                self.dismiss(animated: true, completion: nil)
-                if self.presentingViewController is ViewController {
-                    self.presentingViewController?.dismiss(animated: true, completion: nil)                    
-                }
-            case "Terms":
-                print("terms")
-            case "Privacy":
-                print("privacy")
-            default:
-                print(404)
+        if URL.absoluteString == "Login" {
+            
+            self.dismiss(animated: true, completion: nil)
+            if self.presentingViewController is ViewController {
+                self.presentingViewController?.dismiss(animated: true, completion: nil)
+            }
         }
         return false
     }

@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol SnuggoWidgetDelegate: AnyObject {
+    func updatePowerStatus(power: Bool)
+    func updateCarSeatSensorsData(seat: SeatData)
+    func childLeftCarSeat(left: Bool)
+    func childLeftInCarSeat(left: Bool)
+}

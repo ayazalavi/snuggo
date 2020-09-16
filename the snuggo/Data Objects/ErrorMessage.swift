@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct ErrorMessage {
+    let shortMessage, longMessage: String
+}
+
+enum SnuggoError: Error {
+    case PowerDown, WeightError, TemperatrueError, ChildLeftCarSeat, ChildLeftInSeat, SeatBeltError, NONE
+}

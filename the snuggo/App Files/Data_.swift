@@ -9,10 +9,10 @@
 import Foundation
 
 var data = [
-    Product(title: "Car Seat Monitoring", photo: "carseat", id: 1),
-    Product(title: "Car Seat Monitoring", photo: "carseat", id: 2),
-    Product(title: "Car Seat Monitoring", photo: "carseat", id: 3),
-    Product(title: "Car Seat Monitoring 2", photo: "carseat-2", id: 4),
-    Product(title: "Car Seat Monitoring 2", photo: "carseat-2", id: 5),
-    Product(title: "Car Seat Monitoring 2", photo: "carseat-2", id: 6)
+    Product(title: "Car Seat Monitoring", photo: "carseat", uuid: "4fafc201-1fb5-459e-8fcc-c5c9c331914b", id: 1),
+    Product(title: "Car Seat Monitoring", photo: "carseat", uuid: "4fafc201-1fb5-459e-8fcc-c5c9c331914b", id: 2),
+    Product(title: "Car Seat Monitoring", photo: "carseat", uuid: "4fafc201-1fb5-459e-8fcc-c5c9c331914b", id: 3),
+    Product(title: "Car Seat Monitoring 2", photo: "carseat-2", uuid: "4fafc201-1fb5-459e-8fcc-c5c9c331914b", id: 4),
+    Product(title: "Car Seat Monitoring 2", photo: "carseat-2", uuid: "4fafc201-1fb5-459e-8fcc-c5c9c331914b", id: 5),
+    Product(title: "Car Seat Monitoring 2", photo: "carseat-2", uuid: "4fafc201-1fb5-459e-8fcc-c5c9c331914b", id: 6)
 ]

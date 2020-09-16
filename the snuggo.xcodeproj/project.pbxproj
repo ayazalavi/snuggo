@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B56C125A250640E400D827E8 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C1259250640E400D827E8 /* Dashboard.swift */; };
-		B56C125C250648CF00D827E8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C125B250648CF00D827E8 /* Data.swift */; };
+		B56C125A250640E400D827E8 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C1259250640E400D827E8 /* DashboardViewController.swift */; };
+		B56C125C250648CF00D827E8 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C125B250648CF00D827E8 /* AppSettings.swift */; };
 		B56C125E25064D0F00D827E8 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C125D25064D0F00D827E8 /* QRScannerView.swift */; };
 		B56C126025064D8F00D827E8 /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C125F25064D8E00D827E8 /* QRScannerViewController.swift */; };
 		B56C12622506516000D827E8 /* ProductFoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56C12612506516000D827E8 /* ProductFoundViewController.swift */; };
@@ -21,8 +21,28 @@
 		B597DA91250342A3004F03AE /* the_snuggoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA90250342A3004F03AE /* the_snuggoTests.swift */; };
 		B597DA9C250342A3004F03AE /* the_snuggoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DA9B250342A3004F03AE /* the_snuggoUITests.swift */; };
 		B597DAAB25036044004F03AE /* LoginUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DAAA25036044004F03AE /* LoginUIView.swift */; };
-		B597DAAD25036512004F03AE /* LoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DAAC25036512004F03AE /* LoginButtons.swift */; };
+		B597DAAD25036512004F03AE /* AppButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DAAC25036512004F03AE /* AppButtons.swift */; };
 		B597DAAF25037651004F03AE /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597DAAE25037651004F03AE /* LoginTextField.swift */; };
+		B5B093B1250D22C500141FBB /* ProductDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B093B0250D22C500141FBB /* ProductDashboard.swift */; };
+		B5B093B3250E149D00141FBB /* TemperatureDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B093B2250E149D00141FBB /* TemperatureDisplay.swift */; };
+		B5B093B5250E176100141FBB /* BluetoothScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B093B4250E176100141FBB /* BluetoothScanner.swift */; };
+		B5D8997E2510DEFD00B43D77 /* SnuggoWidgetDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8997D2510DEFD00B43D77 /* SnuggoWidgetDelegate.swift */; };
+		B5D899802510DF1500B43D77 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8997F2510DF1500B43D77 /* BluetoothManager.swift */; };
+		B5D899832510DF4C00B43D77 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899822510DF4C00B43D77 /* ErrorMessage.swift */; };
+		B5D899852510DF6C00B43D77 /* SeatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899842510DF6C00B43D77 /* SeatData.swift */; };
+		B5D899872510DFB500B43D77 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899862510DFB500B43D77 /* Product.swift */; };
+		B5D899892510DFD300B43D77 /* QRData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899882510DFD300B43D77 /* QRData.swift */; };
+		B5D8998B2510E00100B43D77 /* Data_.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8998A2510E00100B43D77 /* Data_.swift */; };
+		B5D8998E2510E03C00B43D77 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8998D2510E03C00B43D77 /* UIButton+Extension.swift */; };
+		B5D899912510E07F00B43D77 /* SeatBeltCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899902510E07F00B43D77 /* SeatBeltCell.swift */; };
+		B5D899932510E0B800B43D77 /* WeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899922510E0B800B43D77 /* WeightCell.swift */; };
+		B5D899952510E0D400B43D77 /* ErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899942510E0D400B43D77 /* ErrorCell.swift */; };
+		B5D8999C2510E27500B43D77 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5D8999B2510E27500B43D77 /* Default-568h@2x.png */; };
+		B5D899A02510EC4E00B43D77 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8999F2510EC4E00B43D77 /* Notifications.swift */; };
+		B5D899A22511039A00B43D77 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899A12511039A00B43D77 /* DismissSegue.swift */; };
+		B5D899A4251103DC00B43D77 /* BluetoothPowerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899A3251103DC00B43D77 /* BluetoothPowerControl.swift */; };
+		B5D899A6251103FC00B43D77 /* AutoModeDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899A5251103FC00B43D77 /* AutoModeDisplay.swift */; };
+		B5D899A82511041D00B43D77 /* CarSeatDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D899A72511041D00B43D77 /* CarSeatDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B56C1259250640E400D827E8 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
-		B56C125B250648CF00D827E8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		B56C1259250640E400D827E8 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		B56C125B250648CF00D827E8 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		B56C125D25064D0F00D827E8 /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		B56C125F25064D8E00D827E8 /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		B56C12612506516000D827E8 /* ProductFoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFoundViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +83,28 @@
 		B597DA9B250342A3004F03AE /* the_snuggoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = the_snuggoUITests.swift; sourceTree = "<group>"; };
 		B597DA9D250342A3004F03AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B597DAAA25036044004F03AE /* LoginUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIView.swift; sourceTree = "<group>"; };
-		B597DAAC25036512004F03AE /* LoginButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtons.swift; sourceTree = "<group>"; };
+		B597DAAC25036512004F03AE /* AppButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtons.swift; sourceTree = "<group>"; };
 		B597DAAE25037651004F03AE /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		B5B093B0250D22C500141FBB /* ProductDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDashboard.swift; sourceTree = "<group>"; };
+		B5B093B2250E149D00141FBB /* TemperatureDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureDisplay.swift; sourceTree = "<group>"; };
+		B5B093B4250E176100141FBB /* BluetoothScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothScanner.swift; sourceTree = "<group>"; };
+		B5D8997D2510DEFD00B43D77 /* SnuggoWidgetDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnuggoWidgetDelegate.swift; sourceTree = "<group>"; };
+		B5D8997F2510DF1500B43D77 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		B5D899822510DF4C00B43D77 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		B5D899842510DF6C00B43D77 /* SeatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatData.swift; sourceTree = "<group>"; };
+		B5D899862510DFB500B43D77 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B5D899882510DFD300B43D77 /* QRData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRData.swift; sourceTree = "<group>"; };
+		B5D8998A2510E00100B43D77 /* Data_.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data_.swift; sourceTree = "<group>"; };
+		B5D8998D2510E03C00B43D77 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		B5D899902510E07F00B43D77 /* SeatBeltCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatBeltCell.swift; sourceTree = "<group>"; };
+		B5D899922510E0B800B43D77 /* WeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCell.swift; sourceTree = "<group>"; };
+		B5D899942510E0D400B43D77 /* ErrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCell.swift; sourceTree = "<group>"; };
+		B5D8999B2510E27500B43D77 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B5D8999F2510EC4E00B43D77 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		B5D899A12511039A00B43D77 /* DismissSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		B5D899A3251103DC00B43D77 /* BluetoothPowerControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPowerControl.swift; sourceTree = "<group>"; };
+		B5D899A5251103FC00B43D77 /* AutoModeDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoModeDisplay.swift; sourceTree = "<group>"; };
+		B5D899A72511041D00B43D77 /* CarSeatDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSeatDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +135,7 @@
 		B597DA6D2503429D004F03AE = {
 			isa = PBXGroup;
 			children = (
+				B5D8999B2510E27500B43D77 /* Default-568h@2x.png */,
 				B597DA782503429D004F03AE /* the snuggo */,
 				B597DA8F250342A3004F03AE /* the snuggoTests */,
 				B597DA9A250342A3004F03AE /* the snuggoUITests */,
@@ -115,18 +156,14 @@
 		B597DA782503429D004F03AE /* the snuggo */ = {
 			isa = PBXGroup;
 			children = (
+				B5D8999A2510E1AA00B43D77 /* Helpers */,
+				B5D899992510E19000B43D77 /* App Files */,
+				B5D899982510E16700B43D77 /* View Controllers */,
+				B5D8998F2510E06500B43D77 /* CollectionCells */,
+				B5D8998C2510E02E00B43D77 /* Extensions */,
+				B5D899812510DF3100B43D77 /* Data Objects */,
+				B5D8997C2510DEE000B43D77 /* Protocols */,
 				B597DAA925035FD1004F03AE /* Custom Views */,
-				B597DA792503429D004F03AE /* AppDelegate.swift */,
-				B597DA7B2503429D004F03AE /* SceneDelegate.swift */,
-				B56C1259250640E400D827E8 /* Dashboard.swift */,
-				B597DA7D2503429D004F03AE /* ViewController.swift */,
-				B597DA7F2503429D004F03AE /* Main.storyboard */,
-				B597DA82250342A3004F03AE /* Assets.xcassets */,
-				B597DA84250342A3004F03AE /* LaunchScreen.storyboard */,
-				B597DA87250342A3004F03AE /* Info.plist */,
-				B56C125B250648CF00D827E8 /* Data.swift */,
-				B56C125F25064D8E00D827E8 /* QRScannerViewController.swift */,
-				B56C12612506516000D827E8 /* ProductFoundViewController.swift */,
 			);
 			path = "the snuggo";
 			sourceTree = "<group>";
@@ -154,10 +191,89 @@
 			children = (
 				B56C125D25064D0F00D827E8 /* QRScannerView.swift */,
 				B597DAAA25036044004F03AE /* LoginUIView.swift */,
-				B597DAAC25036512004F03AE /* LoginButtons.swift */,
+				B597DAAC25036512004F03AE /* AppButtons.swift */,
 				B597DAAE25037651004F03AE /* LoginTextField.swift */,
+				B5B093B2250E149D00141FBB /* TemperatureDisplay.swift */,
+				B5D899A3251103DC00B43D77 /* BluetoothPowerControl.swift */,
+				B5D899A5251103FC00B43D77 /* AutoModeDisplay.swift */,
+				B5D899A72511041D00B43D77 /* CarSeatDisplay.swift */,
 			);
 			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		B5D8997C2510DEE000B43D77 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8997D2510DEFD00B43D77 /* SnuggoWidgetDelegate.swift */,
+				B5D8997F2510DF1500B43D77 /* BluetoothManager.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B5D899812510DF3100B43D77 /* Data Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B5D899822510DF4C00B43D77 /* ErrorMessage.swift */,
+				B5D899842510DF6C00B43D77 /* SeatData.swift */,
+				B5D899862510DFB500B43D77 /* Product.swift */,
+				B5D899882510DFD300B43D77 /* QRData.swift */,
+			);
+			path = "Data Objects";
+			sourceTree = "<group>";
+		};
+		B5D8998C2510E02E00B43D77 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8998D2510E03C00B43D77 /* UIButton+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B5D8998F2510E06500B43D77 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				B5D899902510E07F00B43D77 /* SeatBeltCell.swift */,
+				B5D899922510E0B800B43D77 /* WeightCell.swift */,
+				B5D899942510E0D400B43D77 /* ErrorCell.swift */,
+			);
+			path = CollectionCells;
+			sourceTree = "<group>";
+		};
+		B5D899982510E16700B43D77 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B56C1259250640E400D827E8 /* DashboardViewController.swift */,
+				B597DA7D2503429D004F03AE /* ViewController.swift */,
+				B5B093B0250D22C500141FBB /* ProductDashboard.swift */,
+				B56C125F25064D8E00D827E8 /* QRScannerViewController.swift */,
+				B56C12612506516000D827E8 /* ProductFoundViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B5D899992510E19000B43D77 /* App Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5D8998A2510E00100B43D77 /* Data_.swift */,
+				B597DA87250342A3004F03AE /* Info.plist */,
+				B597DA82250342A3004F03AE /* Assets.xcassets */,
+				B597DA84250342A3004F03AE /* LaunchScreen.storyboard */,
+				B597DA7F2503429D004F03AE /* Main.storyboard */,
+				B597DA792503429D004F03AE /* AppDelegate.swift */,
+				B597DA7B2503429D004F03AE /* SceneDelegate.swift */,
+			);
+			path = "App Files";
+			sourceTree = "<group>";
+		};
+		B5D8999A2510E1AA00B43D77 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B5B093B4250E176100141FBB /* BluetoothScanner.swift */,
+				B56C125B250648CF00D827E8 /* AppSettings.swift */,
+				B5D8999F2510EC4E00B43D77 /* Notifications.swift */,
+				B5D899A12511039A00B43D77 /* DismissSegue.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B597DA86250342A3004F03AE /* LaunchScreen.storyboard in Resources */,
+				B5D8999C2510E27500B43D77 /* Default-568h@2x.png in Resources */,
 				B597DA83250342A3004F03AE /* Assets.xcassets in Resources */,
 				B597DA812503429D004F03AE /* Main.storyboard in Resources */,
 			);
@@ -291,17 +408,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D899872510DFB500B43D77 /* Product.swift in Sources */,
 				B56C126025064D8F00D827E8 /* QRScannerViewController.swift in Sources */,
-				B597DAAD25036512004F03AE /* LoginButtons.swift in Sources */,
+				B597DAAD25036512004F03AE /* AppButtons.swift in Sources */,
+				B5D899932510E0B800B43D77 /* WeightCell.swift in Sources */,
+				B5D8998E2510E03C00B43D77 /* UIButton+Extension.swift in Sources */,
+				B5D899802510DF1500B43D77 /* BluetoothManager.swift in Sources */,
+				B5D899A4251103DC00B43D77 /* BluetoothPowerControl.swift in Sources */,
+				B5D899A6251103FC00B43D77 /* AutoModeDisplay.swift in Sources */,
+				B5D899892510DFD300B43D77 /* QRData.swift in Sources */,
+				B5D899A22511039A00B43D77 /* DismissSegue.swift in Sources */,
+				B5B093B1250D22C500141FBB /* ProductDashboard.swift in Sources */,
+				B5B093B5250E176100141FBB /* BluetoothScanner.swift in Sources */,
+				B5D899A82511041D00B43D77 /* CarSeatDisplay.swift in Sources */,
+				B5D8997E2510DEFD00B43D77 /* SnuggoWidgetDelegate.swift in Sources */,
+				B5D8998B2510E00100B43D77 /* Data_.swift in Sources */,
+				B5D899912510E07F00B43D77 /* SeatBeltCell.swift in Sources */,
 				B597DA7E2503429D004F03AE /* ViewController.swift in Sources */,
 				B597DA7A2503429D004F03AE /* AppDelegate.swift in Sources */,
+				B5D899852510DF6C00B43D77 /* SeatData.swift in Sources */,
 				B597DAAF25037651004F03AE /* LoginTextField.swift in Sources */,
 				B56C125E25064D0F00D827E8 /* QRScannerView.swift in Sources */,
 				B597DAAB25036044004F03AE /* LoginUIView.swift in Sources */,
-				B56C125A250640E400D827E8 /* Dashboard.swift in Sources */,
+				B5D899A02510EC4E00B43D77 /* Notifications.swift in Sources */,
+				B5D899952510E0D400B43D77 /* ErrorCell.swift in Sources */,
+				B5D899832510DF4C00B43D77 /* ErrorMessage.swift in Sources */,
+				B5B093B3250E149D00141FBB /* TemperatureDisplay.swift in Sources */,
+				B56C125A250640E400D827E8 /* DashboardViewController.swift in Sources */,
 				B597DA7C2503429D004F03AE /* SceneDelegate.swift in Sources */,
 				B56C12622506516000D827E8 /* ProductFoundViewController.swift in Sources */,
-				B56C125C250648CF00D827E8 /* Data.swift in Sources */,
+				B56C125C250648CF00D827E8 /* AppSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,14 +611,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5D394BCDFH;
-				INFOPLIST_FILE = "the snuggo/Info.plist";
+				DEVELOPMENT_TEAM = 7T58WVL5DK;
+				INFOPLIST_FILE = "the snuggo/App Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.client.noman.snuggo.the-snuggo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayaz.test.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -494,14 +630,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5D394BCDFH;
-				INFOPLIST_FILE = "the snuggo/Info.plist";
+				DEVELOPMENT_TEAM = 7T58WVL5DK;
+				INFOPLIST_FILE = "the snuggo/App Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.client.noman.snuggo.the-snuggo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ayaz.test.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

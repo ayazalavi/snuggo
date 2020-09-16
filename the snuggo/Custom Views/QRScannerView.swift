@@ -66,8 +66,8 @@ extension QRScannerView {
         let videoInput: AVCaptureDeviceInput
         do {
             videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice)
-        } catch let error {
-            print(error)
+        } catch {
+            //print(error)
             return
         }
         

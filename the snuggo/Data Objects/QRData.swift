@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct QRData:Decodable {
+    var product_id: Int
+}

@@ -14,9 +14,14 @@ enum KEYS: String, RawRepresentable {
     case PRODUCTS
 }
 
-enum AppKeys: String, Codable, CodingKey {
-    case UUID = "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
-    case NO_BLUETOOTH_NOTIFICATION = "SNUGGO_NOTIFICATION"
+enum BluetoothServices: String, Codable, CodingKey {
+    case UUID = ""
+}
+
+enum NotificationType: String, RawRepresentable {
+    case NO_BLUETOOTH_NOTIFICATION
+    case CHILD_LEFT_IN, CHILD_LEFT_SEAT
+    case SEAT_BELT, WEIGHT, TEMPERATURE
 }
 
 class AppSettings: NSObject, UNUserNotificationCenterDelegate {
@@ -29,9 +34,10 @@ class AppSettings: NSObject, UNUserNotificationCenterDelegate {
         checkForNotifications { settings in
             if settings.authorizationStatus != .authorized {
                 self.requestNotifications
-                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [.universalLinksOnly: false], completionHandler: nil)
+            } else {
+                UNUserNotificationCenter.current().delegate = self
             }
-            UNUserNotificationCenter.current().delegate = self
+            
         }
         return true
     }
@@ -39,11 +45,11 @@ class AppSettings: NSObject, UNUserNotificationCenterDelegate {
     var requestNotifications: Void {
         if #available(iOS 12.0, *) {
             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge, .providesAppNotificationSettings]) { (allowe, error) in
-                print(allowe, error ?? "error-str")
+                //print(allowe, error ?? "error-str")
             }
         } else {
             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (allowe, error) in
-                print(allowe, error ?? "error-str")
+                //print(allowe, error ?? "error-str")
             }
             // Fallback on earlier versions
         }
@@ -58,13 +64,13 @@ class AppSettings: NSObject, UNUserNotificationCenterDelegate {
     // MARK: Notification delegates
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print("did receive")
+        //print("did receive")
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        print("will present")
+        //print("will present")
         completionHandler(.alert)
-        if notification.request.identifier == AppKeys.NO_BLUETOOTH_NOTIFICATION.rawValue {
+        if notification.request.identifier == NotificationType.NO_BLUETOOTH_NOTIFICATION.rawValue {
             UIApplication.shared.open(URL(string: "App-Prefs:root=Bluetooth")!, options: [.universalLinksOnly: false], completionHandler: nil)
 
         }

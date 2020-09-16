@@ -7,3 +7,10 @@
 //
 
 import Foundation
+import CoreBluetooth
+
+protocol BluetoothManager {
+    var peripherals: Dictionary<UUID, CBPeripheral> { get }
+    var delegate: SnuggoWidgetDelegate? { get set }
+    func connectToPeripherals()
+}
