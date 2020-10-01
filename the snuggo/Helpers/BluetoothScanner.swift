@@ -21,7 +21,7 @@ class BluetoothScanner: NSObject, BluetoothManager {
     
     private(set) var peripherals = Dictionary<UUID, CBPeripheral>() {
         didSet {
-            //self.connectToPeripherals()
+            self.connectToPeripherals()
         }
     }
     

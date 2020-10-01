@@ -9,9 +9,12 @@
 import Foundation
 import CoreBluetooth
 
+enum Location: Int, Codable { case TOP_CENTER, BOTTOM_LEFT, BOTTOM_CENTER, BOTTOM_RIGHT }
+enum DOT_SIZE { case SMALL, LARGE }
 struct Product: Codable {
     var title, photo, uuid: String
     var id: Int
+    var sensors_location:[Location]
     
     static func getAllProducts() -> [Product]? {
         var products: [Product]?
