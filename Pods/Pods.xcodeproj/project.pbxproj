@@ -1,0 +1,1116 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		057529CC3867543F4F51CB0379358A3E /* OneSignal-iOS10.0 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2587F90FB05F8DEB80E69FF7127B2FAD /* Build configuration list for PBXAggregateTarget "OneSignal-iOS10.0" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "OneSignal-iOS10.0";
+		};
+		2C0C7A40625CA39E77F887E2ECAB3C5F /* OneSignal-iOS11.0 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0CC1D3680DA55422286351A3C6974F78 /* Build configuration list for PBXAggregateTarget "OneSignal-iOS11.0" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "OneSignal-iOS11.0";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0C6D781241590D0631A7E55EB6FECF73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		22FED971580FB44F1F6024E9D772DD73 /* Pods-the snuggo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E7B2D6DE450272B7EE1AC37315B545 /* Pods-the snuggo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26FB478B65E0E91C020EC84616C8B919 /* Pods-OneSignalNotificationServiceExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA6326FD6E6B6CD9D43949B7EAF82B6 /* Pods-OneSignalNotificationServiceExtension-dummy.m */; };
+		3A711FB2B05549B39AE042A18E5E20A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4745EF34E3F736804C63C977C4531B30 /* Pods-the snuggo-the snuggoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C1949B28EBCED910F8234DF993C476 /* Pods-the snuggo-the snuggoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47FB1840B210F4BD4A928D22CE67B369 /* Pods-the snuggo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BB894F708F69A59AB235D73E2CC17495 /* Pods-the snuggo-dummy.m */; };
+		5B806EF1F6FF35FB9D0BA713CC518EE2 /* Pods-the snuggo-the snuggoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FDD6968FADAC473F5E46AC17F39C38 /* Pods-the snuggo-the snuggoUITests-dummy.m */; };
+		66DCF1F43B7BF1E2750FF0575ADDA3AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		92BDE8B52376AB4F13D9BAAFE0162C6B /* Pods-the snuggoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D39999545EA01FF21B4CFCBCC1B0BC /* Pods-the snuggoTests-dummy.m */; };
+		9B49282F0408DA8CAA7DD594C7B60FA4 /* Pods-the snuggoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4205C98268F50CACB3B26749EE9F952 /* Pods-the snuggoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5BEBC2A070C077950F91DC5D6ED9CB2 /* Pods-OneSignalNotificationServiceExtension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1EA5640B796C3D950CF57302C09289F /* Pods-OneSignalNotificationServiceExtension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA342785BC1C1F21E9BBE691B3AC81BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41D1776C96805AC55742574F517BDE0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C0C7A40625CA39E77F887E2ECAB3C5F;
+			remoteInfo = "OneSignal-iOS11.0";
+		};
+		42DC5357A060813F610BE962AE30E86B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 057529CC3867543F4F51CB0379358A3E;
+			remoteInfo = "OneSignal-iOS10.0";
+		};
+		B1DB8F727885D3F54B93A44E9D4338CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C0C7A40625CA39E77F887E2ECAB3C5F;
+			remoteInfo = "OneSignal-iOS11.0";
+		};
+		D807EADF662FA4856B9945E4D3A38A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2F5A2CB3E6ACFF7E032BEE3A2A747C7;
+			remoteInfo = "Pods-the snuggo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B44702EFB1F99E7FE95CCCA10AA6DF5 /* Pods-the snuggo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-the snuggo.debug.xcconfig"; sourceTree = "<group>"; };
+		21B5D15D71745B01E6FB8D6C457E575B /* Pods-OneSignalNotificationServiceExtension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.plist"; sourceTree = "<group>"; };
+		25E4A5C3FAB1A942686E194B9ADDE95B /* Pods_the_snuggo_the_snuggoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_the_snuggo_the_snuggoUITests.framework; path = "Pods-the snuggo-the snuggoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25FDD6968FADAC473F5E46AC17F39C38 /* Pods-the snuggo-the snuggoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-the snuggo-the snuggoUITests-dummy.m"; sourceTree = "<group>"; };
+		28F7CE22F15D85C6154A3961F29EB751 /* Pods-the snuggoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-the snuggoTests.modulemap"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36F703580AAC518994774BF9AAE7E30B /* Pods-the snuggoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-the snuggoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		37C1949B28EBCED910F8234DF993C476 /* Pods-the snuggo-the snuggoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-the snuggo-the snuggoUITests-umbrella.h"; sourceTree = "<group>"; };
+		3AC7A2D38ABE298F751A65ABCB3B782A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		3CF67500A8478C6BCA79F57576CF6993 /* Pods-OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
+		404DE87AFF450AAAF7AB254F13834DFB /* Pods-the snuggo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-the snuggo.release.xcconfig"; sourceTree = "<group>"; };
+		4AF3B972C94DFF11700E306F18F01DF3 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OneSignalNotificationServiceExtension.framework; path = "Pods-OneSignalNotificationServiceExtension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C52241BD067C0E0E8CCA0DF3B3344B5 /* Pods-the snuggo-the snuggoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-the snuggo-the snuggoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		66BBE390D54DB7D13A7361E290170D7D /* Pods-the snuggoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-the snuggoTests.release.xcconfig"; sourceTree = "<group>"; };
+		6735CF48ABA8352F092A5512F90098D6 /* Pods-the snuggo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-the snuggo-acknowledgements.plist"; sourceTree = "<group>"; };
+		6A08D2451DA7F05F1ABF9C9618C17AC4 /* OneSignal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OneSignal.framework; path = iOS_SDK/OneSignalSDK/Framework/OneSignal.framework; sourceTree = "<group>"; };
+		74DA19726D2320CCB51080CB4ECC9A9B /* Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8EEA0C08AC9C2D3F15AC07781FCBAF3A /* Pods-the snuggoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-the snuggoTests-Info.plist"; sourceTree = "<group>"; };
+		8F21CC0AEB30D2024CCA8E6EA35CECD0 /* Pods-the snuggoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-the snuggoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90DD7E55649D02B21A7430D56F88251F /* Pods-the snuggo-the snuggoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-the snuggo-the snuggoUITests.modulemap"; sourceTree = "<group>"; };
+		93D39999545EA01FF21B4CFCBCC1B0BC /* Pods-the snuggoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-the snuggoTests-dummy.m"; sourceTree = "<group>"; };
+		9D3B0A3A6CE75F2924D90EEB95690E73 /* OneSignal-iOS11.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "OneSignal-iOS11.0.debug.xcconfig"; path = "../OneSignal-iOS11.0/OneSignal-iOS11.0.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A35B67F7F792F2C595672D9CFF8F34B1 /* Pods_the_snuggo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_the_snuggo.framework; path = "Pods-the snuggo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A755A05E101EC9A70F1705F65BBEBB /* Pods-the snuggo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-the snuggo.modulemap"; sourceTree = "<group>"; };
+		A7E7B2D6DE450272B7EE1AC37315B545 /* Pods-the snuggo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-the snuggo-umbrella.h"; sourceTree = "<group>"; };
+		AB7F068F4FF2F99A156F4ED5F8A2C610 /* Pods-the snuggo-the snuggoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-the snuggo-the snuggoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD8E5D1703056091B1197B68DC63CD05 /* OneSignal-iOS11.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "OneSignal-iOS11.0.release.xcconfig"; path = "../OneSignal-iOS11.0/OneSignal-iOS11.0.release.xcconfig"; sourceTree = "<group>"; };
+		AE62706DF57AE92C525FED8C5D8BA9F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		B4205C98268F50CACB3B26749EE9F952 /* Pods-the snuggoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-the snuggoTests-umbrella.h"; sourceTree = "<group>"; };
+		B4D2075AF546DBE8708B407457BCAA22 /* Pods-the snuggo-the snuggoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-the snuggo-the snuggoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB894F708F69A59AB235D73E2CC17495 /* Pods-the snuggo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-the snuggo-dummy.m"; sourceTree = "<group>"; };
+		BEA6326FD6E6B6CD9D43949B7EAF82B6 /* Pods-OneSignalNotificationServiceExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OneSignalNotificationServiceExtension-dummy.m"; sourceTree = "<group>"; };
+		C0E701E57B4FEDD094B10684FAD12625 /* Pods-the snuggo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-the snuggo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CD832695D80C348D26532F01C1437634 /* Pods-the snuggo-the snuggoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-the snuggo-the snuggoUITests-Info.plist"; sourceTree = "<group>"; };
+		DB95707E9EC41E6FA9548C65B13BE82D /* Pods-OneSignalNotificationServiceExtension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-OneSignalNotificationServiceExtension.modulemap"; sourceTree = "<group>"; };
+		DBDC686CB1C9F1F95957FF27AC5E8A25 /* Pods-the snuggo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-the snuggo-Info.plist"; sourceTree = "<group>"; };
+		DC72892D7D6C88A8BB30A7ACD15CE2A5 /* Pods_the_snuggoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_the_snuggoTests.framework; path = "Pods-the snuggoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE25DD34CDD38123E5BC50C98E6EE033 /* Pods-the snuggoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-the snuggoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE4345B1354EB4153A3000C7E05D7D14 /* Pods-the snuggo-the snuggoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-the snuggo-the snuggoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F1EA5640B796C3D950CF57302C09289F /* Pods-OneSignalNotificationServiceExtension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OneSignalNotificationServiceExtension-umbrella.h"; sourceTree = "<group>"; };
+		F238E32792491D384CBCA397FAF01514 /* OneSignal-iOS10.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OneSignal-iOS10.0.release.xcconfig"; sourceTree = "<group>"; };
+		F85A213890C219D49CC5D9726271C6AF /* OneSignal-iOS10.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OneSignal-iOS10.0.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CCB329503B370B18768B65349DA52F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DCF1F43B7BF1E2750FF0575ADDA3AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54D189A91662C759156D794699C2DC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A711FB2B05549B39AE042A18E5E20A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D108F1F39C922B3A02FDCE3B64C4982F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA342785BC1C1F21E9BBE691B3AC81BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DBE175DD5DB4BAAA8B30D1E171C94F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6D781241590D0631A7E55EB6FECF73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D40C0AE1924259957A7C76C1386542E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				469E47FAC8D5D75D148DD4D04C3A4E8C /* OneSignal */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		381367D7BA53A6C742C2D22524CC6662 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F85A213890C219D49CC5D9726271C6AF /* OneSignal-iOS10.0.debug.xcconfig */,
+				F238E32792491D384CBCA397FAF01514 /* OneSignal-iOS10.0.release.xcconfig */,
+				9D3B0A3A6CE75F2924D90EEB95690E73 /* OneSignal-iOS11.0.debug.xcconfig */,
+				AD8E5D1703056091B1197B68DC63CD05 /* OneSignal-iOS11.0.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OneSignal-iOS10.0";
+			sourceTree = "<group>";
+		};
+		469E47FAC8D5D75D148DD4D04C3A4E8C /* OneSignal */ = {
+			isa = PBXGroup;
+			children = (
+				6EA357B7965FB39DB81DBF051ECB2FE0 /* Frameworks */,
+				381367D7BA53A6C742C2D22524CC6662 /* Support Files */,
+			);
+			name = OneSignal;
+			path = OneSignal;
+			sourceTree = "<group>";
+		};
+		6EA357B7965FB39DB81DBF051ECB2FE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A08D2451DA7F05F1ABF9C9618C17AC4 /* OneSignal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73EBA5CB409276026FFCC755268A59FA /* Pods-the snuggoTests */ = {
+			isa = PBXGroup;
+			children = (
+				28F7CE22F15D85C6154A3961F29EB751 /* Pods-the snuggoTests.modulemap */,
+				DE25DD34CDD38123E5BC50C98E6EE033 /* Pods-the snuggoTests-acknowledgements.markdown */,
+				36F703580AAC518994774BF9AAE7E30B /* Pods-the snuggoTests-acknowledgements.plist */,
+				93D39999545EA01FF21B4CFCBCC1B0BC /* Pods-the snuggoTests-dummy.m */,
+				8EEA0C08AC9C2D3F15AC07781FCBAF3A /* Pods-the snuggoTests-Info.plist */,
+				B4205C98268F50CACB3B26749EE9F952 /* Pods-the snuggoTests-umbrella.h */,
+				8F21CC0AEB30D2024CCA8E6EA35CECD0 /* Pods-the snuggoTests.debug.xcconfig */,
+				66BBE390D54DB7D13A7361E290170D7D /* Pods-the snuggoTests.release.xcconfig */,
+			);
+			name = "Pods-the snuggoTests";
+			path = "Target Support Files/Pods-the snuggoTests";
+			sourceTree = "<group>";
+		};
+		841036805816670885E691468E99E2AB /* Pods-the snuggo-the snuggoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90DD7E55649D02B21A7430D56F88251F /* Pods-the snuggo-the snuggoUITests.modulemap */,
+				EE4345B1354EB4153A3000C7E05D7D14 /* Pods-the snuggo-the snuggoUITests-acknowledgements.markdown */,
+				B4D2075AF546DBE8708B407457BCAA22 /* Pods-the snuggo-the snuggoUITests-acknowledgements.plist */,
+				25FDD6968FADAC473F5E46AC17F39C38 /* Pods-the snuggo-the snuggoUITests-dummy.m */,
+				CD832695D80C348D26532F01C1437634 /* Pods-the snuggo-the snuggoUITests-Info.plist */,
+				37C1949B28EBCED910F8234DF993C476 /* Pods-the snuggo-the snuggoUITests-umbrella.h */,
+				AB7F068F4FF2F99A156F4ED5F8A2C610 /* Pods-the snuggo-the snuggoUITests.debug.xcconfig */,
+				5C52241BD067C0E0E8CCA0DF3B3344B5 /* Pods-the snuggo-the snuggoUITests.release.xcconfig */,
+			);
+			name = "Pods-the snuggo-the snuggoUITests";
+			path = "Target Support Files/Pods-the snuggo-the snuggoUITests";
+			sourceTree = "<group>";
+		};
+		85DB74324D1E8C053B63EDD0FBC68CFA /* Pods-the snuggo */ = {
+			isa = PBXGroup;
+			children = (
+				A7A755A05E101EC9A70F1705F65BBEBB /* Pods-the snuggo.modulemap */,
+				C0E701E57B4FEDD094B10684FAD12625 /* Pods-the snuggo-acknowledgements.markdown */,
+				6735CF48ABA8352F092A5512F90098D6 /* Pods-the snuggo-acknowledgements.plist */,
+				BB894F708F69A59AB235D73E2CC17495 /* Pods-the snuggo-dummy.m */,
+				DBDC686CB1C9F1F95957FF27AC5E8A25 /* Pods-the snuggo-Info.plist */,
+				A7E7B2D6DE450272B7EE1AC37315B545 /* Pods-the snuggo-umbrella.h */,
+				1B44702EFB1F99E7FE95CCCA10AA6DF5 /* Pods-the snuggo.debug.xcconfig */,
+				404DE87AFF450AAAF7AB254F13834DFB /* Pods-the snuggo.release.xcconfig */,
+			);
+			name = "Pods-the snuggo";
+			path = "Target Support Files/Pods-the snuggo";
+			sourceTree = "<group>";
+		};
+		BEFE0030B029F17A5931BCD09C6A7D87 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBC24814BECD7D925C75F12E95AD2541 /* Pods-OneSignalNotificationServiceExtension */,
+				85DB74324D1E8C053B63EDD0FBC68CFA /* Pods-the snuggo */,
+				841036805816670885E691468E99E2AB /* Pods-the snuggo-the snuggoUITests */,
+				73EBA5CB409276026FFCC755268A59FA /* Pods-the snuggoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C847A837E3377C6240145E545A167164 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AF3B972C94DFF11700E306F18F01DF3 /* Pods_OneSignalNotificationServiceExtension.framework */,
+				A35B67F7F792F2C595672D9CFF8F34B1 /* Pods_the_snuggo.framework */,
+				25E4A5C3FAB1A942686E194B9ADDE95B /* Pods_the_snuggo_the_snuggoUITests.framework */,
+				DC72892D7D6C88A8BB30A7ACD15CE2A5 /* Pods_the_snuggoTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1D40C0AE1924259957A7C76C1386542E /* Pods */,
+				C847A837E3377C6240145E545A167164 /* Products */,
+				BEFE0030B029F17A5931BCD09C6A7D87 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBC24814BECD7D925C75F12E95AD2541 /* Pods-OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DB95707E9EC41E6FA9548C65B13BE82D /* Pods-OneSignalNotificationServiceExtension.modulemap */,
+				74DA19726D2320CCB51080CB4ECC9A9B /* Pods-OneSignalNotificationServiceExtension-acknowledgements.markdown */,
+				21B5D15D71745B01E6FB8D6C457E575B /* Pods-OneSignalNotificationServiceExtension-acknowledgements.plist */,
+				BEA6326FD6E6B6CD9D43949B7EAF82B6 /* Pods-OneSignalNotificationServiceExtension-dummy.m */,
+				3CF67500A8478C6BCA79F57576CF6993 /* Pods-OneSignalNotificationServiceExtension-Info.plist */,
+				F1EA5640B796C3D950CF57302C09289F /* Pods-OneSignalNotificationServiceExtension-umbrella.h */,
+				AE62706DF57AE92C525FED8C5D8BA9F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				3AC7A2D38ABE298F751A65ABCB3B782A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = "Pods-OneSignalNotificationServiceExtension";
+			path = "Target Support Files/Pods-OneSignalNotificationServiceExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		80A008E8061D3FF7BCD23DBB43F89A49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4745EF34E3F736804C63C977C4531B30 /* Pods-the snuggo-the snuggoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9AB794358DF1D7A89854734BC1FCB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B49282F0408DA8CAA7DD594C7B60FA4 /* Pods-the snuggoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A45E2109E2C9C1303F0BC52F648CAC7B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BEBC2A070C077950F91DC5D6ED9CB2 /* Pods-OneSignalNotificationServiceExtension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B62065D09461DC2E822105B3AED239 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22FED971580FB44F1F6024E9D772DD73 /* Pods-the snuggo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		38BE8FA3D03EFCF2794481C356283E46 /* Pods-the snuggo-the snuggoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2ADDE3F71D6CAEF5838E8B571FDAA5F /* Build configuration list for PBXNativeTarget "Pods-the snuggo-the snuggoUITests" */;
+			buildPhases = (
+				80A008E8061D3FF7BCD23DBB43F89A49 /* Headers */,
+				2E5B7F14CB62CF82704783AD6225BF9E /* Sources */,
+				C54D189A91662C759156D794699C2DC8 /* Frameworks */,
+				BCAD3E53D1D38DDAD78AC6A17C67D204 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				181D4B12733C8AC40E4F67F4479263FB /* PBXTargetDependency */,
+			);
+			name = "Pods-the snuggo-the snuggoUITests";
+			productName = "Pods-the snuggo-the snuggoUITests";
+			productReference = 25E4A5C3FAB1A942686E194B9ADDE95B /* Pods_the_snuggo_the_snuggoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51FAEC9B0F950BFA5C26C5682804D4AF /* Pods-the snuggoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F90D03D3FF19332123DB89C0CC5EAF61 /* Build configuration list for PBXNativeTarget "Pods-the snuggoTests" */;
+			buildPhases = (
+				8F9AB794358DF1D7A89854734BC1FCB1 /* Headers */,
+				2797C1616D33345844F96C41CCD00D3B /* Sources */,
+				D108F1F39C922B3A02FDCE3B64C4982F /* Frameworks */,
+				F314A9254D20A9D80ACA5B1BF98D8CD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95729225E8F6B2C2B6E0137E32F247EB /* PBXTargetDependency */,
+			);
+			name = "Pods-the snuggoTests";
+			productName = "Pods-the snuggoTests";
+			productReference = DC72892D7D6C88A8BB30A7ACD15CE2A5 /* Pods_the_snuggoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD0F10574EB554D7E668F50D2A5B77DF /* Pods-OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04435F4CE7BCF15210E3BC5E02D5E475 /* Build configuration list for PBXNativeTarget "Pods-OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				A45E2109E2C9C1303F0BC52F648CAC7B /* Headers */,
+				B7AE7E77AFD0AA8D37E00E589F3D1F0C /* Sources */,
+				E8DBE175DD5DB4BAAA8B30D1E171C94F /* Frameworks */,
+				3F3F3438758A60025C062A2571D1C1D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7827315FA565052D4E4A630CE85B5B99 /* PBXTargetDependency */,
+			);
+			name = "Pods-OneSignalNotificationServiceExtension";
+			productName = "Pods-OneSignalNotificationServiceExtension";
+			productReference = 4AF3B972C94DFF11700E306F18F01DF3 /* Pods_OneSignalNotificationServiceExtension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C2F5A2CB3E6ACFF7E032BEE3A2A747C7 /* Pods-the snuggo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CCDC259AE278BC1AAA8DB0BB0DD5739 /* Build configuration list for PBXNativeTarget "Pods-the snuggo" */;
+			buildPhases = (
+				C4B62065D09461DC2E822105B3AED239 /* Headers */,
+				F75923F41BC7D221B66A339835C6E1D7 /* Sources */,
+				3CCB329503B370B18768B65349DA52F6 /* Frameworks */,
+				2FA265EAA80E116200790A656CEA2D69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D94BA7F50EA8E08387C5DC951F654B0E /* PBXTargetDependency */,
+			);
+			name = "Pods-the snuggo";
+			productName = "Pods-the snuggo";
+			productReference = A35B67F7F792F2C595672D9CFF8F34B1 /* Pods_the_snuggo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C847A837E3377C6240145E545A167164 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				057529CC3867543F4F51CB0379358A3E /* OneSignal-iOS10.0 */,
+				2C0C7A40625CA39E77F887E2ECAB3C5F /* OneSignal-iOS11.0 */,
+				BD0F10574EB554D7E668F50D2A5B77DF /* Pods-OneSignalNotificationServiceExtension */,
+				C2F5A2CB3E6ACFF7E032BEE3A2A747C7 /* Pods-the snuggo */,
+				38BE8FA3D03EFCF2794481C356283E46 /* Pods-the snuggo-the snuggoUITests */,
+				51FAEC9B0F950BFA5C26C5682804D4AF /* Pods-the snuggoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FA265EAA80E116200790A656CEA2D69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3F3438758A60025C062A2571D1C1D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAD3E53D1D38DDAD78AC6A17C67D204 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F314A9254D20A9D80ACA5B1BF98D8CD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2797C1616D33345844F96C41CCD00D3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92BDE8B52376AB4F13D9BAAFE0162C6B /* Pods-the snuggoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E5B7F14CB62CF82704783AD6225BF9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B806EF1F6FF35FB9D0BA713CC518EE2 /* Pods-the snuggo-the snuggoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7AE7E77AFD0AA8D37E00E589F3D1F0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FB478B65E0E91C020EC84616C8B919 /* Pods-OneSignalNotificationServiceExtension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75923F41BC7D221B66A339835C6E1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47FB1840B210F4BD4A928D22CE67B369 /* Pods-the snuggo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		181D4B12733C8AC40E4F67F4479263FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OneSignal-iOS11.0";
+			target = 2C0C7A40625CA39E77F887E2ECAB3C5F /* OneSignal-iOS11.0 */;
+			targetProxy = B1DB8F727885D3F54B93A44E9D4338CA /* PBXContainerItemProxy */;
+		};
+		7827315FA565052D4E4A630CE85B5B99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OneSignal-iOS10.0";
+			target = 057529CC3867543F4F51CB0379358A3E /* OneSignal-iOS10.0 */;
+			targetProxy = 42DC5357A060813F610BE962AE30E86B /* PBXContainerItemProxy */;
+		};
+		95729225E8F6B2C2B6E0137E32F247EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-the snuggo";
+			target = C2F5A2CB3E6ACFF7E032BEE3A2A747C7 /* Pods-the snuggo */;
+			targetProxy = D807EADF662FA4856B9945E4D3A38A5F /* PBXContainerItemProxy */;
+		};
+		D94BA7F50EA8E08387C5DC951F654B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "OneSignal-iOS11.0";
+			target = 2C0C7A40625CA39E77F887E2ECAB3C5F /* OneSignal-iOS11.0 */;
+			targetProxy = 41D1776C96805AC55742574F517BDE0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11E7AE49EE93FD0949EC056344AC56FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3B0A3A6CE75F2924D90EEB95690E73 /* OneSignal-iOS11.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		23A499B220CD41EE3F7062898FA3330C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC7A2D38ABE298F751A65ABCB3B782A /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F45D6523547D80ABA85F97D9AEDDC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F21CC0AEB30D2024CCA8E6EA35CECD0 /* Pods-the snuggoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-the snuggoTests/Pods-the snuggoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-the snuggoTests/Pods-the snuggoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F19E84A78308AF74549FDC9B7BC31DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8E5D1703056091B1197B68DC63CD05 /* OneSignal-iOS11.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B52D5E6E69D2FE91B8A14A432A9A6D65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B44702EFB1F99E7FE95CCCA10AA6DF5 /* Pods-the snuggo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-the snuggo/Pods-the snuggo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-the snuggo/Pods-the snuggo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BADF55200B17297CF6E9AEFA3443FFEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB7F068F4FF2F99A156F4ED5F8A2C610 /* Pods-the snuggo-the snuggoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-the snuggo-the snuggoUITests/Pods-the snuggo-the snuggoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-the snuggo-the snuggoUITests/Pods-the snuggo-the snuggoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D534D5643AD65CAB0F4CC343DECB4A2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404DE87AFF450AAAF7AB254F13834DFB /* Pods-the snuggo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-the snuggo/Pods-the snuggo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-the snuggo/Pods-the snuggo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D7834EE4555C614783A3256ED768B0B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F238E32792491D384CBCA397FAF01514 /* OneSignal-iOS10.0.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAD89D7FDD0F0C1F219D4F6F1FD9D5A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F85A213890C219D49CC5D9726271C6AF /* OneSignal-iOS10.0.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E66E280783BFDB66D55D498B9C82217F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C52241BD067C0E0E8CCA0DF3B3344B5 /* Pods-the snuggo-the snuggoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-the snuggo-the snuggoUITests/Pods-the snuggo-the snuggoUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-the snuggo-the snuggoUITests/Pods-the snuggo-the snuggoUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC3F1A90240E88DA08F8639A674D9F32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66BBE390D54DB7D13A7361E290170D7D /* Pods-the snuggoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-the snuggoTests/Pods-the snuggoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-the snuggoTests/Pods-the snuggoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F35D2E8F4C3B7FA05E90F7E8D845231F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE62706DF57AE92C525FED8C5D8BA9F7 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04435F4CE7BCF15210E3BC5E02D5E475 /* Build configuration list for PBXNativeTarget "Pods-OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F35D2E8F4C3B7FA05E90F7E8D845231F /* Debug */,
+				23A499B220CD41EE3F7062898FA3330C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CC1D3680DA55422286351A3C6974F78 /* Build configuration list for PBXAggregateTarget "OneSignal-iOS11.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11E7AE49EE93FD0949EC056344AC56FB /* Debug */,
+				5F19E84A78308AF74549FDC9B7BC31DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2587F90FB05F8DEB80E69FF7127B2FAD /* Build configuration list for PBXAggregateTarget "OneSignal-iOS10.0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD89D7FDD0F0C1F219D4F6F1FD9D5A6 /* Debug */,
+				D7834EE4555C614783A3256ED768B0B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CCDC259AE278BC1AAA8DB0BB0DD5739 /* Build configuration list for PBXNativeTarget "Pods-the snuggo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B52D5E6E69D2FE91B8A14A432A9A6D65 /* Debug */,
+				D534D5643AD65CAB0F4CC343DECB4A2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2ADDE3F71D6CAEF5838E8B571FDAA5F /* Build configuration list for PBXNativeTarget "Pods-the snuggo-the snuggoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BADF55200B17297CF6E9AEFA3443FFEB /* Debug */,
+				E66E280783BFDB66D55D498B9C82217F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F90D03D3FF19332123DB89C0CC5EAF61 /* Build configuration list for PBXNativeTarget "Pods-the snuggoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F45D6523547D80ABA85F97D9AEDDC5E /* Debug */,
+				EC3F1A90240E88DA08F8639A674D9F32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

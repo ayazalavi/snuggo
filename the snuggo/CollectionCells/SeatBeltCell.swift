@@ -18,8 +18,81 @@ class SeatBeltCell: UICollectionViewCell {
                 label.text = data.title                
             }
             backgroundImage.image = UIImage(named: data.photo)
+            let width = backgroundImage.frame.size.width
+            let height = backgroundImage.frame.size.height
+            backgroundImage.frame = CGRect(x: self.frame.size.width/2.0 - width/2.0, y: self.frame.size.height/2.0 - height/2.0 - 25, width: width, height: height)
+            print(backgroundImage.image?.size, backgroundImage.frame, backgroundImage.bounds, separator: " - ")
+            backgroundImage.layer.sublayers?.forEach { $0.removeFromSuperlayer() }
+
         }
     }
+
+    
+    func addGreenDot(position: Location, size: DOT_SIZE) {
+        circle(color: .green, position: position, radius: size == DOT_SIZE.SMALL ? 5 : 10 )
+            //    backgroundImage.layer.addSublayer(borderCircle(color: .green, position: position, radius: size == DOT_SIZE.SMALL ? 5 : 10 ))
+    }
+    
+    func addRedPulse(position: Location, size: DOT_SIZE) {
+        circle(color: .red, position: position, radius: size == DOT_SIZE.SMALL ? 5 : 10, animate: true )
+       // backgroundImage.layer.addSublayer(borderCircle(color: .red, position: position, radius: size == DOT_SIZE.SMALL ? 5 : 10 ))
+    }
+    
+    func getLocationPosition(location: Location, radius: CGFloat) -> CGPoint {
+        switch location {
+            case .TOP_CENTER:
+               return CGPoint(x: backgroundImage.frame.size.width/2 + 2*radius, y: 6 * radius)
+            case .BOTTOM_RIGHT:
+               return CGPoint(x: backgroundImage.frame.size.width/2 + 6*radius, y: backgroundImage.frame.size.height - 4*radius)
+            case .BOTTOM_CENTER:
+                return CGPoint(x: backgroundImage.frame.size.width/2 - radius/2, y: backgroundImage.frame.size.height - 2*radius)
+            case .BOTTOM_LEFT:
+                return CGPoint(x: backgroundImage.frame.size.width/2 - 6*radius, y: backgroundImage.frame.size.height - 6*radius)
+        }
+    }
+    
+    func circle(color: UIColor, position: Location, radius: CGFloat, animate: Bool = false) {
+        var pulseLayers = [CAShapeLayer]()
+        for i in 0...3 {
+            let bezeir = UIBezierPath(arcCenter: .zero, radius: radius+(i==0 ? 0: 2), startAngle: 0, endAngle: 2 * .pi, clockwise: true)
+            let pulselayer = CAShapeLayer()
+            pulselayer.path = bezeir.cgPath
+            pulselayer.lineWidth = i==0 ? 0 : 2.0
+            pulselayer.fillColor = i==0 ? color.cgColor : UIColor.clear.cgColor
+            pulselayer.strokeColor = i==0 ? UIColor.clear.cgColor: color.cgColor
+            pulselayer.lineCap = .round
+            pulselayer.position = getLocationPosition(location: position, radius: radius)
+            backgroundImage.layer.addSublayer(pulselayer)
+            if i != 0 {
+                pulseLayers.append(pulselayer)
+            }
+        }
+        if animate {
+            animatePulse(pulseLayers: pulseLayers)
+        }
+        
+    }
+    
+    func animatePulse(pulseLayers: [CAShapeLayer]) {
+        for (index, pulseLayer) in pulseLayers.enumerated() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2*Double((index+1))) {
+                let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
+                scaleAnimation.duration = 1.0
+                scaleAnimation.fromValue = 1.0
+                scaleAnimation.toValue = 2.0
+                scaleAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+                pulseLayer.add(scaleAnimation, forKey: "scale")
+                
+                let opacityAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
+                opacityAnimation.duration = 1.0
+                opacityAnimation.fromValue = 0.9
+                opacityAnimation.toValue = 0.0
+                opacityAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+                pulseLayer.add(opacityAnimation, forKey: "opacity")
+            }
+        }
+    }
+    
     var error: ErrorMessage? {
         didSet {
             if let error = self.error {
@@ -57,3 +130,4 @@ class SeatBeltCell: UICollectionViewCell {
         addSubview(label)
     }
 }
+

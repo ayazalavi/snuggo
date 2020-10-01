@@ -24,7 +24,7 @@ class ProductDashboard: UIViewController {
     let cellid3 = "cell-id3"
     var seat: SeatData?
     var current = 0
-    var timer: Timer?
+    var timer, uiTimer: Timer?
     var notifSent = false
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +67,7 @@ extension ProductDashboard: SnuggoWidgetDelegate {
     func childLeftCarSeat(left: Bool) {
         DispatchQueue.main.async { [weak self] in
             self?.snuggoError = (left ? SnuggoError.ChildLeftCarSeat : (self?.snuggoError == .ChildLeftCarSeat ? .NONE : self?.snuggoError ))!
-            self?.updateUI()
+       //     self?.updateUI()
             if left {
                 if let isvalid = self?.timer?.isValid, isvalid { return }
                 self?.timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: false, block: { (_) in
@@ -84,7 +84,7 @@ extension ProductDashboard: SnuggoWidgetDelegate {
     func childLeftInCarSeat(left: Bool) {
         DispatchQueue.main.async { [weak self] in
             self?.snuggoError = (left ? SnuggoError.ChildLeftInSeat : (self?.snuggoError == .ChildLeftInSeat ? .NONE : self?.snuggoError ))!
-            self?.updateUI()
+          //  self?.updateUI()
         }
     }
     
@@ -94,6 +94,16 @@ extension ProductDashboard: SnuggoWidgetDelegate {
         self.carSeat.setCardSeat(powerDown: !power, otherError: false)
         if let seat = self.seat {
             self.temperature.setTemperature(temperature: seat.temperature, error: seat.checkError(snuggoError: .TemperatrueError))
+        }
+        
+        if power {
+            uiTimer?.invalidate()
+            uiTimer = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: true, block: { [weak self] (_) in
+                self?.updateUI()
+            })
+        }
+        else {
+            uiTimer?.invalidate()
         }
     }
     
@@ -122,9 +132,9 @@ extension ProductDashboard: SnuggoWidgetDelegate {
         }
         else {
             notifSent = false
-            snuggoError = .NONE
+            snuggoError = self.snuggoError == .ChildLeftInSeat || self.snuggoError == .ChildLeftCarSeat ?  self.snuggoError : .NONE
         }
-        self.updateUI()
+        //self.updateUI()
     }
     
    
@@ -162,6 +172,32 @@ extension ProductDashboard: UICollectionViewDelegate, UICollectionViewDataSource
             case 0:
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellid1, for: indexPath) as! SeatBeltCell
                 cell.data = self.product
+                if let seat = self.seat {                    
+                    if seat.belt_1 {
+                        cell.addGreenDot(position: .BOTTOM_LEFT, size: .SMALL)
+                    }
+                    else {
+                        cell.addRedPulse(position: .BOTTOM_LEFT, size: .SMALL)
+                    }
+                    if seat.belt_2 {
+                        cell.addGreenDot(position: .TOP_CENTER, size: .SMALL)
+                    }
+                    else {
+                        cell.addRedPulse(position: .TOP_CENTER, size: .SMALL)
+                    }
+                    if seat.belt_3 {
+                        cell.addGreenDot(position: .BOTTOM_RIGHT, size: .SMALL)
+                    }
+                    else {
+                        cell.addRedPulse(position: .BOTTOM_RIGHT, size: .SMALL)
+                    }
+                    if !seat.belt_4 || snuggoError == .ChildLeftCarSeat || snuggoError == .ChildLeftInSeat || snuggoError == .WeightError {
+                        cell.addRedPulse(position: .BOTTOM_CENTER, size: .LARGE)
+                    }
+                    else {
+                        cell.addGreenDot(position: .BOTTOM_CENTER, size: .LARGE)
+                    }
+                }
                 cell.error = seat.getErrorMessage(type: snuggoError)
                 return cell
             case 1:
